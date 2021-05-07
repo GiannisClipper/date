@@ -5,7 +5,7 @@ import { isDateArr } from './isDateArr.js';
  * @param { Object[] } value - The value to be converted
  * @returns { ( string | null ) } - A string in YYYYMMDD form or null in case of invalid param
  */
-const joinYYYYMMDD = value => {
+const asDateStr = value => {
 
     if ( isDateArr( value ) ) {
         const day = value[ 0 ].toString().padStart( 2, '0' );
@@ -18,5 +18,5 @@ const joinYYYYMMDD = value => {
     return null;
 }
 
-export default joinYYYYMMDD;
-export { joinYYYYMMDD };
+export default asDateStr;
+export { asDateStr };

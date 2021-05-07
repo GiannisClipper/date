@@ -1,9 +1,9 @@
 import { isString } from './isString.js';
-import { splitYYYYMMDD } from './splitYYYYMMDD.js';
-import { joinYYYYMMDD } from './joinYYYYMMDD.js';
+import { asDateArr } from './asDateArr.js';
+import { asDateStr } from './asDateStr.js';
 import { isDateArr } from './isDateArr.js';
 import { getYearDays } from './getYearDays.js';
-import { dayOfYear } from './dayOfYear.js';
+import { getDayOfYear } from './getDayOfYear.js';
 
 /**
  * Gets the number of the days of a date range including the starting and ending limits
@@ -21,16 +21,16 @@ import { dayOfYear } from './dayOfYear.js';
 const getRangeDays = ( from, till ) => {
 
     if ( isString( from ) ) {
-        from = splitYYYYMMDD( from );
+        from = asDateArr( from );
     }
 
     if ( isString( till ) ) {
-        till = splitYYYYMMDD( till );
+        till = asDateArr( till );
     }
 
     if ( isDateArr( from ) && isDateArr( till ) ) {
 
-        const [ _from, _till ] = joinYYYYMMDD( from ) <= joinYYYYMMDD( till )
+        const [ _from, _till ] = asDateStr( from ) <= asDateStr( till )
             ? [ from, till ]
             : [ till, from ];
 
@@ -38,7 +38,7 @@ const getRangeDays = ( from, till ) => {
         const [ , , _tillYear ] = _till;
 
         // add the starting day and the rest days of that year
-        let days = 1 + getYearDays( _fromYear ) - dayOfYear( _from );
+        let days = 1 + getYearDays( _fromYear ) - getDayOfYear( _from );
 
         // add all the days of the middle years
         for ( let i = _fromYear + 1; i < _tillYear; i++ ) {
@@ -46,12 +46,12 @@ const getRangeDays = ( from, till ) => {
         }
 
         // add the ending day and the days before of the that year
-        days += dayOfYear( _till );
+        days += getDayOfYear( _till );
 
         // subtract to correct result when dates are in the same year 
         days -= _fromYear === _tillYear ? getYearDays( _fromYear ) : 0;
 
-        return joinYYYYMMDD( from ) <= joinYYYYMMDD( till )
+        return asDateStr( from ) <= asDateStr( till )
             ? days
             : days * -1;
     }
