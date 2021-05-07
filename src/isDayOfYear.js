@@ -1,6 +1,6 @@
 import { isInteger } from './isInteger.js';
 import { isYear } from './isYear.js';
-import { yearDays } from './yearDays.js';
+import { getYearDays } from './getYearDays.js';
 
 /**
  * Checks if a day is included in days range of a year (from 1 to 365/366)
@@ -12,7 +12,7 @@ const isDayOfYear = ( day, year ) => {
 
     if ( isInteger( day ) && isYear( year ) ) {
 
-        const lastDay = yearDays( year );
+        const lastDay = getYearDays( year );
 
         return day >= 1 && day <= lastDay;
     }

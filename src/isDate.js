@@ -1,7 +1,7 @@
 import { isInteger } from './isInteger.js';
 import { isMonth } from './isMonth.js';
 import { isYear } from './isYear.js';
-import { monthDays } from './monthDays.js';
+import { getMonthDays } from './getMonthDays.js';
 
 /**
  * Checks if a series of values expressing a valid date
@@ -14,7 +14,7 @@ const isDate = ( day, month, year ) => {
 
     if ( isInteger( day ) && isMonth( month ) && isYear( year ) ) {
 
-        const lastDay = monthDays( month, year );
+        const lastDay = getMonthDays( month, year );
 
         return day >= 1 && day <= lastDay;
     }

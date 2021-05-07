@@ -1,5 +1,5 @@
 import { isDayOfYear } from './isDayOfYear.js';
-import { monthDays } from './monthDays.js';
+import { getMonthDays } from './getMonthDays.js';
 
 /**
  * Calcaulates the date given the day in the days sequence (from 1 to 365/366) of a year
@@ -13,7 +13,7 @@ const dateOfYear = ( day, year ) => {
 
         for ( let month = 1; month <= 12; month++ ) {
 
-            const lastDay = monthDays( month, year );
+            const lastDay = getMonthDays( month, year );
 
             if ( day <= lastDay ) {
                 return [ day, month, year ];

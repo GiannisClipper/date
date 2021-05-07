@@ -1,7 +1,7 @@
 import { isString } from './isString.js';
 import { splitYYYYMMDD } from './splitYYYYMMDD.js';
 import { isDateArr } from './isDateArr.js';
-import { countDays } from './countDays.js';
+import { getRangeDays } from './getRangeDays.js';
 
 /**
  * Calcaulates the position of a date in the days sequence of the week (from 1: monday to 7: sunday)
@@ -19,7 +19,7 @@ const dayOfWeek = value => {
         const sampleDate = [ 1, 1, 2020 ];
         const sampleDayOfWeek = 3;  // 1/1/2020 supposed to be wednesday
 
-        const daysBetween = countDays( sampleDate, value ) - 1;
+        const daysBetween = getRangeDays( sampleDate, value ) - 1;
         const dayOffset = daysBetween % 7;
         const result = sampleDayOfWeek + dayOffset;
 
