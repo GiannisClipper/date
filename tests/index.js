@@ -1,6 +1,7 @@
 import './isInteger.js';
 import './isString.js';
 
+import './configYearRange.js';
 import './isYear.js';
 import './isLeapYear.js';
 import './isMonth.js';
