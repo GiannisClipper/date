@@ -1,7 +1,7 @@
 /**
  * Checks if a value is an integer
  * @param { number } value - The value to be checked
- * @returns { boolean } - A boolean response
+ * @returns { boolean } - True or false
  */
  const isInteger = value => {
 

@@ -2,8 +2,12 @@ import { isInteger } from './isInteger.js';
 
 /**
  * Checks if a value is a leap year
+ * @example
+ * isLeapYear( 2021 ); // returns false
+ * @example
+ * isLeapYear( 2024 ); // return true
  * @param { number } value - The value to be checked
- * @returns { boolean } - A boolean response
+ * @returns { boolean } - True or false
  */
 const isLeapYear = ( value, from, till ) => {
 

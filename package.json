@@ -1,5 +1,8 @@
 {
     "name": "@giannisclipper/date",
     "version": "1.0.0",
-    "type": "module"
+    "type": "module",
+    "devDependencies": {
+        "jsdoc": "^3.6.6"
+    }
 }

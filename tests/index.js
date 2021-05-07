@@ -12,6 +12,8 @@ import { test_joinYYYYMMDD } from './joinYYYYMMDD.js';
 import { test_splitYYYYMMDD } from './splitYYYYMMDD.js';
 import { test_countDays } from './countDays.js';
 import { test_dayOfWeek } from './dayOfWeek.js';
+import { test_isDayOfYear } from './isDayOfYear.js';
+import { test_dateOfYear } from './dateOfYear.js';
 
 console.log( 'Testing isInteger...' );
 test_isInteger();
@@ -55,4 +57,9 @@ test_countDays();
 console.log( 'Testing dayOfWeek...' );
 test_dayOfWeek();
 
+console.log( 'Testing isDayOfYear...' );
+test_isDayOfYear();
+
+console.log( 'Testing dateOfYear...' );
+test_dateOfYear();
 

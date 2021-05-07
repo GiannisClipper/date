@@ -4,11 +4,11 @@ import { isYear } from './isYear.js';
 import { monthDays } from './monthDays.js';
 
 /**
- * Checks if a siries of values is a valid date
- * @param { number } day - The day
+ * Checks if a series of values expressing a valid date
+ * @param { number } day - The day (from 1 to 28/29/30/31)
  * @param { number } month - The month (from 1 to 12)
- * @param { number } year - The year
- * @returns { boolean } - A boolean response
+ * @param { number } year - The year (from 1900 to 2099)
+ * @returns { boolean } - True or false
  */
 const isDate = ( day, month, year ) => {
 

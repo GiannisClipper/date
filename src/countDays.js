@@ -6,10 +6,10 @@ import { yearDays } from './yearDays.js';
 import { dayOfYear } from './dayOfYear.js';
 
 /**
- * Counts the number of days between two dates
+ * Counts the sum of days in a range of two days including them
  * @param { ( string | Object[] ) } from - The starting date to count
  * @param { ( string | Object[] ) } till - The ending date to count
- * @returns { ( number | null ) } - The number of days or null in case of invalid params
+ * @returns { ( number | null ) } - The sum of days or null in case of invalid params
  */
 const countDays = ( from, till ) => {
 
