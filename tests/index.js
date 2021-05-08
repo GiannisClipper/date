@@ -12,9 +12,9 @@ import './isDateArr.js';
 import './asDateArr.js';
 import './asDateStr.js';
 
-import './getYearDays.js';
-import './getMonthDays.js';
-import './getRangeDays.js';
+import './countDaysOfYear.js';
+import './countDaysOfMonth.js';
+import './countDaysOfRange.js';
 import './getDayOfWeek.js';
 import './getDayOfYear.js';
 import './getDateByDayOfYear.js';

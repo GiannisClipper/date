@@ -1,7 +1,7 @@
 import { isString } from './isString.js';
 import { asDateArr } from './asDateArr.js';
 import { isDateArr } from './isDateArr.js';
-import { getMonthDays } from './getMonthDays.js';
+import { countDaysOfMonth } from './countDaysOfMonth.js';
 
 /**
  * Gets the position of a date in the days sequence of the year (from 1 to 365/366)
@@ -27,7 +27,7 @@ const getDayOfYear = value => {
 
         let pos = day;
         for ( let i = 1; i < month; i++ ) {
-            pos += getMonthDays( i, year );
+            pos += countDaysOfMonth( i, year );
         }
 
         return pos;

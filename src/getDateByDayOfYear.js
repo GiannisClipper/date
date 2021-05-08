@@ -1,7 +1,7 @@
 import { isInteger } from './isInteger.js';
 import { isYear } from './isYear.js';
-import { getYearDays } from './getYearDays.js';
-import { getMonthDays } from './getMonthDays.js';
+import { countDaysOfYear } from './countDaysOfYear.js';
+import { countDaysOfMonth } from './countDaysOfMonth.js';
 
 /**
  * Gets the date given the day in the days sequence (from 1 to 365/366) of a year
@@ -20,13 +20,13 @@ const getDateByDayOfYear = ( day, year ) => {
 
     if ( isInteger( day ) && isYear( year ) ) {
 
-        const maxYearDay = getYearDays( year );
+        const maxYearDay = countDaysOfYear( year );
 
         if ( day >= 1 && day <= maxYearDay ) {
 
             for ( let month = 1; month <= 12; month++ ) {
 
-                const maxMonthDay = getMonthDays( month, year );
+                const maxMonthDay = countDaysOfMonth( month, year );
 
                 if ( day <= maxMonthDay ) {
                     return [ day, month, year ];

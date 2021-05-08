@@ -6,8 +6,8 @@ import { isLeapYear } from './isLeapYear.js';
  * Gets the number of the days of a month
  * 
  * @example
- * getMonthDays( 1, 2021 ); // returns 31
- * getMonthDays( 2, 2021 ); // returns 28
+ * countDaysOfMonth( 1, 2021 ); // returns 31
+ * countDaysOfMonth( 2, 2021 ); // returns 28
  * 
  * @param { number } month - The month (from 1 to 12)
  * @param { number } year - The year (to consider february on leap years)
@@ -15,7 +15,7 @@ import { isLeapYear } from './isLeapYear.js';
  * @returns { ( number | null ) } - The number of the days or null in case of invalid params
  */
 
-const getMonthDays = ( month, year ) => {
+const countDaysOfMonth = ( month, year ) => {
 
     if ( isMonth( month ) && isYear( year ) ) {
 
@@ -31,5 +31,5 @@ const getMonthDays = ( month, year ) => {
     return null;
 }
 
-export default getMonthDays;
-export { getMonthDays };
+export default countDaysOfMonth;
+export { countDaysOfMonth };
