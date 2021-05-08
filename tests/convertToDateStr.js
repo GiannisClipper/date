@@ -4,6 +4,7 @@ import { convertToDateStr } from '../src/convertToDateStr.js';
 function test_convertToDateStr() {
     assert.strictEqual( convertToDateStr(), null, 'convertToDateStr()' );
     assert.strictEqual( convertToDateStr( '01012021' ), null, 'convertToDateStr( "01012021" )' );
+    assert.strictEqual( convertToDateStr( '20210101' ), null, 'convertToDateStr( "20210101" )' );
     assert.strictEqual( convertToDateStr( [ 1, 1 ] ), null, 'convertToDateStr( [ 1, 1 ] )' );
     assert.strictEqual( convertToDateStr( [ 1, 1, -1 ] ), null, 'convertToDateStr( [ 1, 1, -1 ] )' );
     assert.strictEqual( convertToDateStr( [ 1, 1, 2021 ] ), '20210101', 'convertToDateStr( [ 1, 1, 2021 ] )' );

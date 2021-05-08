@@ -2,10 +2,13 @@ import { isString } from './isString.js';
 import { isDateArr } from './isDateArr.js';
 
 /**
- * Converts a string in YYYYMMDD form to an array expressing a date 
+ * Converts a string in YYYYMMDD format to an array expressing a date 
+ * 
  * @param { string } value - The value to be converted
+ * 
  * @returns { ( Object[] | null ) } - An array expressing a date or null in case of invalid param
  */
+
 const convertToDateArr = value => {
 
     if ( isString( value ) ) {
