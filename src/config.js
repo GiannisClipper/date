@@ -6,14 +6,14 @@ import { isInteger } from './isInteger.js';
  * @namespace
  * 
  * @example
- * configYearRange.get(); // returns [ 1900, 2099 ]
- * configYearRange.set( 1800, 2199 ); // returns true
- * configYearRange.get(); // returns [ 1800, 2199 ]
+ * config.getYearRange(); // returns [ 1900, 2099 ]
+ * config.setYearRange( 1800, 2199 ); // returns true
+ * config.getYearRange(); // returns [ 1800, 2199 ]
  */
 
- const configYearRange = {
+ const config = {
 
-    /** @lends configYearRange */
+    /** @lends config */
 
     /**
     * Sets the range of valid years
@@ -24,11 +24,11 @@ import { isInteger } from './isInteger.js';
     * @returns { boolean } - True on success or false on invalid params
     * 
     * @example
-    * configYearRange.set( '1800-2199' ); // returns false
-    * configYearRange.set( 1800, 2199 ); // returns true
+    * config.setYearRange( '1800-2199' ); // returns false
+    * config.setYearRange( 1800, 2199 ); // returns true
     */
 
-    set( from, till ) {
+    setYearRange( from, till ) {
 
         if ( isInteger( from ) && isInteger( till ) && from <= till ) {
 
@@ -46,10 +46,10 @@ import { isInteger } from './isInteger.js';
     * @returns { Object[] } - An array with the starting and ending dates
     * 
     * @example
-    * configYearRange.get(); // returns [ 1900, 2099 ]
+    * config.getYearRange(); // returns [ 1900, 2099 ]
     */
 
-    get() {
+    getYearRange() {
         const from = parseInt( process.env.GIANNISCLIPPER_DATE_YEAR_FROM );
         const till = parseInt( process.env.GIANNISCLIPPER_DATE_YEAR_TILL );
 
@@ -60,5 +60,5 @@ import { isInteger } from './isInteger.js';
 
 };
 
-export default configYearRange;
-export { configYearRange };
+export default config;
+export { config };

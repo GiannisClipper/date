@@ -1,7 +1,7 @@
 import compareDatesValidation from './compareDatesValidation.js';
 
 /**
-* Checks if dates are all different between them
+* Compares each date of a series of dates to be different to the others
 * 
 * @param { ...( string | Object[] ) } dates - A series of dates
 * 

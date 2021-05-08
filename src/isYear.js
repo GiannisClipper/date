@@ -1,5 +1,5 @@
 import { isInteger } from './isInteger.js';
-import { configYearRange } from './configYearRange.js';
+import { config } from './config.js';
 
 /**
  * Checks if a value is an integer expressing a valid year
@@ -11,7 +11,7 @@ import { configYearRange } from './configYearRange.js';
 
 const isYear = value => {
 
-    const [ from, till ] = configYearRange.get();
+    const [ from, till ] = config.getYearRange();
 
     return isInteger( value ) && value >= from && value <= till;
 }

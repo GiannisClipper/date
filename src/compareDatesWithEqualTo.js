@@ -1,7 +1,7 @@
 import compareDates from './compareDates.js';
 
 /**
-* Checks if each date is equal to next one
+* Compares each date of a series of dates to be equal to the others
 * 
 * @param { ...( string | Object[] ) } dates - A series of dates
 * 
