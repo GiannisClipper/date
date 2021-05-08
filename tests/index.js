@@ -2,6 +2,7 @@ import './isInteger.js';
 import './isString.js';
 
 import './config.js';
+
 import './isYear.js';
 import './isLeapYear.js';
 import './isMonth.js';
@@ -20,12 +21,13 @@ import './countDaysOfRange.js';
 import './findDayOfWeek.js';
 import './findDayOfYear.js';
 import './findDateByDayOfYear.js';
+import './findDateByDaysAddition.js';
 
-import './compareDatesValidation.js';
-import './compareDatesWithEqualTo.js';
-import './compareDatesWithGreaterThan.js';
-import './compareDatesWithGreaterThanEqualTo.js';
-import './compareDatesWithLessThan.js';
-import './compareDatesWithLessThanEqualTo.js';
-import './compareDatesWithNotEqualTo.js';
+import './compareValidation.js';
+import './compareEqualTo.js';
+import './compareGreaterThan.js';
+import './compareGreaterThanEqualTo.js';
+import './compareLessThan.js';
+import './compareLessThanEqualTo.js';
+import './compareNotEqualTo.js';
 

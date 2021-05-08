@@ -9,11 +9,11 @@ import convertToDateStr from './convertToDateStr.js';
 * @returns { boolean } - True or false
 * 
 * @example
-* compareDatesValidation( '20210101', '20210115' );  // returns true
-* compareDatesValidation( '20210101', 'bla.. bla..' );  // returns false
+* compareValidation( '20210101', '20210115' );  // returns true
+* compareValidation( '20210101', 'bla.. bla..' );  // returns false
 */
 
-const compareDatesValidation = dates => {
+const compareValidation = dates => {
 
     if ( ! Array.isArray( dates ) || dates.length < 2 ) {
         return false;
@@ -34,5 +34,5 @@ const compareDatesValidation = dates => {
     return true;
 }
 
-export default compareDatesValidation;
-export { compareDatesValidation };
+export default compareValidation;
+export { compareValidation };

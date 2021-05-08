@@ -1,4 +1,4 @@
-import compareDatesValidation from './compareDatesValidation.js';
+import compareValidation from './compareValidation.js';
 
 /**
 * Compares each date of a series of dates to be different to the others
@@ -8,13 +8,13 @@ import compareDatesValidation from './compareDatesValidation.js';
 * @returns { boolean } - True or false or null on invalid params
 * 
 * @example
-* compareDatesWithNotEqualTo( '20210101', '20210101' );  // returns false
-* compareDatesWithNotEqualTo( '20210101', '20210102', '20210103' );  // returns true
+* compareNotEqualTo( '20210101', '20210101' );  // returns false
+* compareNotEqualTo( '20210101', '20210102', '20210103' );  // returns true
 */
 
-const compareDatesWithNotEqualTo = ( ...dates ) => {
+const compareNotEqualTo = ( ...dates ) => {
 
-    if ( compareDatesValidation( dates ) ) {
+    if ( compareValidation( dates ) ) {
 
         for ( let i = 0; i < dates.length - 1; i++ ) {
 
@@ -33,5 +33,5 @@ const compareDatesWithNotEqualTo = ( ...dates ) => {
     return null;
 };
 
-export default compareDatesWithNotEqualTo;
-export { compareDatesWithNotEqualTo };
+export default compareNotEqualTo;
+export { compareNotEqualTo };

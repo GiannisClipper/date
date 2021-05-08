@@ -1,4 +1,4 @@
-import compareDatesValidation from './compareDatesValidation.js';
+import compareValidation from './compareValidation.js';
 
 /**
 * Compares dates in an array according to a given condition
@@ -9,9 +9,9 @@ import compareDatesValidation from './compareDatesValidation.js';
 * @returns { boolean } - True or false or null on invalid params
 */
 
-const compareDates = ( dates, condition ) => {
+const compare = ( dates, condition ) => {
 
-    if ( compareDatesValidation( dates ) ) {
+    if ( compareValidation( dates ) ) {
 
         let prevDate = dates[ 0 ];
         let nextDate;
@@ -32,5 +32,5 @@ const compareDates = ( dates, condition ) => {
     return null;
 };
 
-export default compareDates;
-export { compareDates };
+export default compare;
+export { compare };

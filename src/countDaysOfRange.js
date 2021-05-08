@@ -8,14 +8,14 @@ import { findDayOfYear } from './findDayOfYear.js';
 /**
  * Gets the number of the days of a date range including the starting and ending limits
  * 
- * @example
- * countDaysOfRange( '20210429', '20210502' ) // returns 4
- * countDaysOfRange( '20210502', '20210429' ) // returns -4
- * 
  * @param { ( string | Object[] ) } from - The starting date of the range
  * @param { ( string | Object[] ) } till - The ending date of the range
  * 
  * @returns { ( number | null ) } - The the number of the days or null in case of invalid params
+ * 
+ * @example
+ * countDaysOfRange( '20210429', '20210502' ) // returns 4
+ * countDaysOfRange( '20210502', '20210429' ) // returns -4
  */
 
 const countDaysOfRange = ( from, till ) => {

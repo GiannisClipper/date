@@ -4,15 +4,15 @@ import { isDateArr } from './isDateArr.js';
 import { countDaysOfRange } from './countDaysOfRange.js';
 
 /**
- * Ges the position of a date in the days sequence of the week (from 1: monday to 7: sunday)
- * 
- * @example
- * findDayOfWeek( "20210507" ); // returns 5
- * findDayOfWeek( "20210510" ); // returns 1
+ * Finds the position of a date in the days sequence of the week (from 1: monday to 7: sunday)
  * 
  * @param { ( string | Object[] ) } value - The date
  * 
  * @returns { ( number | null ) } - The position in week or null in case of invalid param
+ * 
+ * @example
+ * findDayOfWeek( "20210507" ); // returns 5
+ * findDayOfWeek( "20210510" ); // returns 1
  */
 
 const findDayOfWeek = value => {
