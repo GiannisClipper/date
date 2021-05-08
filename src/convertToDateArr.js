@@ -6,7 +6,7 @@ import { isDateArr } from './isDateArr.js';
  * @param { string } value - The value to be converted
  * @returns { ( Object[] | null ) } - An array expressing a date or null in case of invalid param
  */
-const asDateArr = value => {
+const convertToDateArr = value => {
 
     if ( isString( value ) ) {
         const array = [
@@ -23,5 +23,5 @@ const asDateArr = value => {
     return null;
 }
 
-export default asDateArr;
-export { asDateArr };
+export default convertToDateArr;
+export { convertToDateArr };

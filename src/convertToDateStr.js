@@ -8,7 +8,7 @@ import { isDateArr } from './isDateArr.js';
  * @returns { ( string | null ) } - A string in YYYYMMDD format or null in case of invalid param
  */
 
-const asDateStr = value => {
+const convertToDateStr = value => {
 
     if ( isDateArr( value ) ) {
         const day = value[ 0 ].toString().padStart( 2, '0' );
@@ -21,5 +21,5 @@ const asDateStr = value => {
     return null;
 }
 
-export default asDateStr;
-export { asDateStr };
+export default convertToDateStr;
+export { convertToDateStr };

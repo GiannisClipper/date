@@ -1,6 +1,6 @@
 import { isString } from './isString.js';
-import { asDateArr } from './asDateArr.js';
-import { asDateStr } from './asDateStr.js';
+import { convertToDateArr } from './convertToDateArr.js';
+import { convertToDateStr } from './convertToDateStr.js';
 import { isDateArr } from './isDateArr.js';
 import { countDaysOfYear } from './countDaysOfYear.js';
 import { findDayOfYear } from './findDayOfYear.js';
@@ -21,16 +21,16 @@ import { findDayOfYear } from './findDayOfYear.js';
 const countDaysOfRange = ( from, till ) => {
 
     if ( isString( from ) ) {
-        from = asDateArr( from );
+        from = convertToDateArr( from );
     }
 
     if ( isString( till ) ) {
-        till = asDateArr( till );
+        till = convertToDateArr( till );
     }
 
     if ( isDateArr( from ) && isDateArr( till ) ) {
 
-        const [ _from, _till ] = asDateStr( from ) <= asDateStr( till )
+        const [ _from, _till ] = convertToDateStr( from ) <= convertToDateStr( till )
             ? [ from, till ]
             : [ till, from ];
 
@@ -51,7 +51,7 @@ const countDaysOfRange = ( from, till ) => {
         // subtract to correct result when dates are in the same year 
         days -= _fromYear === _tillYear ? countDaysOfYear( _fromYear ) : 0;
 
-        return asDateStr( from ) <= asDateStr( till )
+        return convertToDateStr( from ) <= convertToDateStr( till )
             ? days
             : days * -1;
     }

@@ -9,8 +9,8 @@ import './isDate.js';
 
 import './isDateArr.js';
 
-import './asDateArr.js';
-import './asDateStr.js';
+import './convertToDateArr.js';
+import './convertToDateStr.js';
 
 import './countDaysOfYear.js';
 import './countDaysOfMonth.js';

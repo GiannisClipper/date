@@ -1,5 +1,5 @@
 import { isString } from './isString.js';
-import { asDateArr } from './asDateArr.js';
+import { convertToDateArr } from './convertToDateArr.js';
 import { isDateArr } from './isDateArr.js';
 import { countDaysOfRange } from './countDaysOfRange.js';
 
@@ -18,7 +18,7 @@ import { countDaysOfRange } from './countDaysOfRange.js';
 const findDayOfWeek = value => {
 
     if ( isString( value) ) {
-        value = asDateArr( value );
+        value = convertToDateArr( value );
     }
 
     if ( isDateArr( value ) ) {
