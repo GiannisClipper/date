@@ -16,7 +16,7 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
  * @returns { ( Object[] | null ) } - An array expressing a date ([ day, month, year ]) or null in case of invalid params
  */
 
-const getDateByDayOfYear = ( day, year ) => {
+const findDateByDayOfYear = ( day, year ) => {
 
     if ( isInteger( day ) && isYear( year ) ) {
 
@@ -41,5 +41,5 @@ const getDateByDayOfYear = ( day, year ) => {
     return null;
 }
 
-export default getDateByDayOfYear;
-export { getDateByDayOfYear };
+export default findDateByDayOfYear;
+export { findDateByDayOfYear };
