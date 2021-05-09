@@ -3,12 +3,12 @@ import { isInteger } from './isInteger.js';
 import { setDateArr } from './setDateArr.js';
 import { getDateArr } from './getDateArr.js';
 import { countDaysOfYear } from './countDaysOfYear.js';
-import { findDayOfYear } from './findDayOfYear.js';
-import { findDateByDayOfYear } from './findDateByDayOfYear.js';
+import { calcDayOfYear } from './calcDayOfYear.js';
+import { calcDateByDayOfYear } from './calcDateByDayOfYear.js';
 import isYear from './isYear.js';
 
 /**
- * Finds the date given a starting date and a positive or negative number of days to be added
+ * Calculates the date given a starting date and a positive or negative number of days to be added
  * 
  * @param { ( string | Object[] ) } from - The starting date
  * @param { number } days - The number of days to be added
@@ -16,11 +16,11 @@ import isYear from './isYear.js';
  * @returns { ( Object[] | null ) } - An array expressing a date ([ day, month, year ]) or null in case of invalid params
  * 
  * @example
- * findDateByDaysAddition( "20210110", 10 ); // returns [ 20, 1, 2021 ]
- * findDateByDaysAddition( "20210110", -10 ); // returns [ 31, 12, 2020 ]
+ * calcDateByDaysAddition( "20210110", 10 ); // returns [ 20, 1, 2021 ]
+ * calcDateByDaysAddition( "20210110", -10 ); // returns [ 31, 12, 2020 ]
  */
 
-const findDateByDaysAddition = ( date, days ) => {
+const calcDateByDaysAddition = ( date, days ) => {
 
     if ( isString( date ) ) {
         date = setDateArr( date );
@@ -29,7 +29,7 @@ const findDateByDaysAddition = ( date, days ) => {
     if ( getDateArr( date ) && isInteger( days ) ) {
 
         let [ , , year ] = date;
-        let day = findDayOfYear( date );
+        let day = calcDayOfYear( date );
         let daysOfYear = countDaysOfYear( year );
 
         while ( true ) {
@@ -47,7 +47,7 @@ const findDateByDaysAddition = ( date, days ) => {
 
             } else {
                 day += days;
-                return findDateByDayOfYear( day, year );
+                return calcDateByDayOfYear( day, year );
             }
 
             if ( ! isYear( year ) ) {
@@ -59,5 +59,5 @@ const findDateByDaysAddition = ( date, days ) => {
     return null;
 }
 
-export default findDateByDaysAddition;
-export { findDateByDaysAddition };
+export default calcDateByDaysAddition;
+export { calcDateByDaysAddition };

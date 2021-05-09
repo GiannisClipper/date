@@ -3,7 +3,7 @@ import { setDateArr } from './setDateArr.js';
 import { setDateStr } from './setDateStr.js';
 import { getDateArr } from './getDateArr.js';
 import { countDaysOfYear } from './countDaysOfYear.js';
-import { findDayOfYear } from './findDayOfYear.js';
+import { calcDayOfYear } from './calcDayOfYear.js';
 
 /**
  * Gets the number of the days of a date range including the starting and ending limits
@@ -38,7 +38,7 @@ const countDaysOfRange = ( from, till ) => {
         const [ , , _tillYear ] = _till;
 
         // add the starting day and the rest days of that year
-        let days = 1 + countDaysOfYear( _fromYear ) - findDayOfYear( _from );
+        let days = 1 + countDaysOfYear( _fromYear ) - calcDayOfYear( _from );
 
         // add all the days of the middle years
         for ( let i = _fromYear + 1; i < _tillYear; i++ ) {
@@ -46,7 +46,7 @@ const countDaysOfRange = ( from, till ) => {
         }
 
         // add the ending day and the days before of the that year
-        days += findDayOfYear( _till );
+        days += calcDayOfYear( _till );
 
         // subtract to correct result when dates are in the same year 
         days -= _fromYear === _tillYear ? countDaysOfYear( _fromYear ) : 0;

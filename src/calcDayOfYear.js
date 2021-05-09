@@ -4,18 +4,18 @@ import { getDateArr } from './getDateArr.js';
 import { countDaysOfMonth } from './countDaysOfMonth.js';
 
 /**
- * Finds the position of a date in the days sequence of the year (from 1 to 365/366)
+ * Calculates the position of a date in the days sequence of the year (from 1 to 365/366)
  * 
  * @param { ( string | Object[] ) } value - The date
  * 
  * @returns { ( number | null ) } - The position in year or null in case of invalid param
  * 
  * @example
- * findDayOfYear( "20210201" ); // returns 32
- * findDayOfYear( "20211231" ); // returns 365
+ * calcDayOfYear( "20210201" ); // returns 32
+ * calcDayOfYear( "20211231" ); // returns 365
  */
 
-const findDayOfYear = value => {
+const calcDayOfYear = value => {
 
     if ( isString( value ) ) {
         value = setDateArr( value );
@@ -36,5 +36,5 @@ const findDayOfYear = value => {
     return null;
 }
 
-export default findDayOfYear;
-export { findDayOfYear };
+export default calcDayOfYear;
+export { calcDayOfYear };

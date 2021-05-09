@@ -4,7 +4,7 @@ import { countDaysOfYear } from './countDaysOfYear.js';
 import { countDaysOfMonth } from './countDaysOfMonth.js';
 
 /**
- * Finds the date given the day in the days sequence (from 1 to 365/366) of a year
+ * Calculates the date given the day in the days sequence (from 1 to 365/366) of a year
  * 
  * @param { number } day - The day
  * @param { number } year - The year
@@ -12,11 +12,11 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
  * @returns { ( Object[] | null ) } - An array expressing a date ([ day, month, year ]) or null in case of invalid params
  * 
  * @example
- * findDateByDayOfYear( 32, 2021 ); // returns [ 1, 2, 2021 ]
- * findDateByDayOfYear( 365, 2021 ); // returns [ 31, 12, 2021 ]
+ * calcDateByDayOfYear( 32, 2021 ); // returns [ 1, 2, 2021 ]
+ * calcDateByDayOfYear( 365, 2021 ); // returns [ 31, 12, 2021 ]
  */
 
-const findDateByDayOfYear = ( day, year ) => {
+const calcDateByDayOfYear = ( day, year ) => {
 
     if ( isInteger( day ) && isYear( year ) ) {
 
@@ -41,5 +41,5 @@ const findDateByDayOfYear = ( day, year ) => {
     return null;
 }
 
-export default findDateByDayOfYear;
-export { findDateByDayOfYear };
+export default calcDateByDayOfYear;
+export { calcDateByDayOfYear };

@@ -27,7 +27,7 @@ import './countDaysOfYear.js';
 import './countDaysOfMonth.js';
 import './countDaysOfRange.js';
 
-import './findDayOfWeek.js';
-import './findDayOfYear.js';
-import './findDateByDayOfYear.js';
-import './findDateByDaysAddition.js';
+import './calcDayOfWeek.js';
+import './calcDayOfYear.js';
+import './calcDateByDayOfYear.js';
+import './calcDateByDaysAddition.js';
