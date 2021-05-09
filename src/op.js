@@ -1,7 +1,7 @@
-import compareValidation from './compareValidation.js';
+import opValidation from './opValidation.js';
 
 /**
-* Compares dates in an array according to a given condition
+* Operates a comparison on each date of a series of dates according to a given condition
 * 
 * @param { Object[] } dates - An array of dates
 * @param { function } condition - A function evaluating a condition between two items
@@ -9,9 +9,9 @@ import compareValidation from './compareValidation.js';
 * @returns { boolean } - True or false or null on invalid params
 */
 
-const compare = ( dates, condition ) => {
+const op = ( dates, condition ) => {
 
-    if ( compareValidation( dates ) ) {
+    if ( opValidation( dates ) ) {
 
         let prevDate = dates[ 0 ];
         let nextDate;
@@ -32,5 +32,5 @@ const compare = ( dates, condition ) => {
     return null;
 };
 
-export default compare;
-export { compare };
+export default op;
+export { op };

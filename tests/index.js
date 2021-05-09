@@ -15,13 +15,13 @@ import './setDateArr.js';
 import './setDateStr.js';
 import './setDateObj.js';
 
-import './compareValidation.js';
-import './compareEqualTo.js';
-import './compareGreaterThan.js';
-import './compareGreaterThanEqualTo.js';
-import './compareLessThan.js';
-import './compareLessThanEqualTo.js';
-import './compareNotEqualTo.js';
+import './opValidation.js';
+import './opEqualTo.js';
+import './opGreaterThan.js';
+import './opGreaterThanEqualTo.js';
+import './opLessThan.js';
+import './opLessThanEqualTo.js';
+import './opNotEqualTo.js';
 
 import './countDaysOfYear.js';
 import './countDaysOfMonth.js';

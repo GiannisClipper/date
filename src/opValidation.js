@@ -9,11 +9,11 @@ import setDateStr from './setDateStr.js';
 * @returns { boolean } - True or false
 * 
 * @example
-* compareValidation( '20210101', '20210115' );  // returns true
-* compareValidation( '20210101', 'bla.. bla..' );  // returns false
+* opValidation( '20210101', '20210115' );  // returns true
+* opValidation( '20210101', 'bla.. bla..' );  // returns false
 */
 
-const compareValidation = dates => {
+const opValidation = dates => {
 
     if ( ! Array.isArray( dates ) || dates.length < 2 ) {
         return false;
@@ -34,5 +34,5 @@ const compareValidation = dates => {
     return true;
 }
 
-export default compareValidation;
-export { compareValidation };
+export default opValidation;
+export { opValidation };

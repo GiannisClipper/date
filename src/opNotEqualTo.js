@@ -1,20 +1,20 @@
-import compareValidation from './compareValidation.js';
+import opValidation from './opValidation.js';
 
 /**
-* Compares each date of a series of dates to be different to the others
+* Operates a comparison on each date of a series of dates to be different to the others
 * 
 * @param { ...( string | Object[] ) } dates - A series of dates
 * 
 * @returns { boolean } - True or false or null on invalid params
 * 
 * @example
-* compareNotEqualTo( '20210101', '20210101' );  // returns false
-* compareNotEqualTo( '20210101', '20210102', '20210103' );  // returns true
+* opNotEqualTo( '20210101', '20210101' );  // returns false
+* opNotEqualTo( '20210101', '20210102', '20210103' );  // returns true
 */
 
-const compareNotEqualTo = ( ...dates ) => {
+const opNotEqualTo = ( ...dates ) => {
 
-    if ( compareValidation( dates ) ) {
+    if ( opValidation( dates ) ) {
 
         for ( let i = 0; i < dates.length - 1; i++ ) {
 
@@ -33,5 +33,5 @@ const compareNotEqualTo = ( ...dates ) => {
     return null;
 };
 
-export default compareNotEqualTo;
-export { compareNotEqualTo };
+export default opNotEqualTo;
+export { opNotEqualTo };
