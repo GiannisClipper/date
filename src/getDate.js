@@ -1,5 +1,6 @@
 import { getDateObj } from './getDateObj.js';
 import { getDateStr } from './getDateStr.js';
+import { getDateRepr } from './getDateRepr.js';
 import { getDateArr } from './getDateArr.js';
 
 /**
@@ -19,7 +20,11 @@ const getDate = value => {
         result = getDateStr( value );
 
         if ( result === null ) {
-            result = getDateArr( value );
+            result = getDateRepr( value );
+
+            if ( result === null ) {
+                result = getDateArr( value );
+            }
         }
     }
 
