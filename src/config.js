@@ -31,6 +31,13 @@ import { isString } from './isString.js';
 
     setYearRange( from, till ) {
 
+        if ( from === undefined && till === undefined ) {
+
+            delete process.env.GIANNISCLIPPER_DATE_YEAR_FROM;
+            delete process.env.GIANNISCLIPPER_DATE_YEAR_TILL;
+            return true;
+        }
+
         if ( isInteger( from ) && isInteger( till ) && from <= till ) {
 
             process.env.GIANNISCLIPPER_DATE_YEAR_FROM = from;
@@ -73,6 +80,12 @@ import { isString } from './isString.js';
 
      setReprPattern( pattern ) {
 
+        if ( pattern === undefined ) {
+
+            delete process.env.GIANNISCLIPPER_DATE_REPR_PATTERN;
+            return true;
+        }
+        
         if ( isString( pattern ) ) {
 
             process.env.GIANNISCLIPPER_DATE_REPR_PATTERN = pattern;

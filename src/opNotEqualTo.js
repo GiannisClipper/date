@@ -1,33 +1,28 @@
-import opValidation from './opValidation.js';
+import setDateStr from './setDateStr.js';
 
 /**
-* Operates a comparison on each date of a series of dates to be different to the others
+* Operates a comparison between two dates, the one should be not equal to the othe
 * 
-* @param { ...( string | Object[] ) } dates - A series of dates
+* @param { ...( Date | string | Object[] ) } date1 - The first date
+* @param { ...( Date | string | Object[] ) } date2 - The second date
 * 
 * @returns { boolean } - True or false or null on invalid params
 * 
 * @example
 * opNotEqualTo( '20210101', '20210101' );  // returns false
-* opNotEqualTo( '20210101', '20210102', '20210103' );  // returns true
+* opNotEqualTo( '20210101', '20210102' );  // returns true
 */
 
-const opNotEqualTo = ( ...dates ) => {
+const opNotEqualTo = ( date1, date2 ) => {
 
-    if ( opValidation( dates ) ) {
+    date1 = setDateStr( date1 );
+    date2 = setDateStr( date2 );
 
-        for ( let i = 0; i < dates.length - 1; i++ ) {
+    if ( date1 && date2 ) {
 
-            for ( let j = i + 1; j < dates.length; j++ ) {
-
-                if ( dates[ i ] === dates[ j ] ) {
-
-                    return false;
-                }
-            }
-        }
-
-        return true;
+        return date1 !== date2
+            ? true
+            : false;
     }
 
     return null;

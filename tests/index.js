@@ -15,7 +15,6 @@ import './setDateArr.js';
 import './setDateStr.js';
 import './setDateObj.js';
 
-import './opValidation.js';
 import './opEqualTo.js';
 import './opGreaterThan.js';
 import './opGreaterThanEqualTo.js';

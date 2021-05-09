@@ -1,20 +1,31 @@
-import op from './op.js';
+import setDateStr from './setDateStr.js';
 
 /**
-* Operates a comparison on each date of a series of dates to be equal to the others
+* Operates a comparison between two dates, the one should be equal to the other
 * 
-* @param { ...( string | Object[] ) } dates - A series of dates
+* @param { ...( Date | string | Object[] ) } date1 - The first date
+* @param { ...( Date | string | Object[] ) } date2 - The second date
 * 
 * @returns { boolean } - True or false or null on invalid params
 * 
 * @example
 * opEqualTo( '20210101', '20210101' );  // returns true
-* opEqualTo( '20210101', '20210101', '20210102' );  // returns false
+* opEqualTo( '20210101', '20210102' );  // returns false
 */
 
-const opEqualTo = ( ...dates ) => {
+const opEqualTo = ( date1, date2 ) => {
 
-    return op( dates, ( date1, date2 ) => date1 === date2 );
+    date1 = setDateStr( date1 );
+    date2 = setDateStr( date2 );
+
+    if ( date1 && date2 ) {
+
+        return date1 === date2
+            ? true
+            : false;
+    }
+
+    return null;
 };
 
 export default opEqualTo;
