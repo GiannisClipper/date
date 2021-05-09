@@ -1,7 +1,5 @@
-import { isString } from './isString.js';
 import { isInteger } from './isInteger.js';
-import { setDateArr } from './setDateArr.js';
-import { getDateArr } from './getDateArr.js';
+import { getDate } from './getDate.js';
 import { countDaysOfYear } from './countDaysOfYear.js';
 import { calcDayOfYear } from './calcDayOfYear.js';
 import { calcDateByDayOfYear } from './calcDateByDayOfYear.js';
@@ -22,13 +20,11 @@ import isYear from './isYear.js';
 
 const calcDateByDaysAddition = ( date, days ) => {
 
-    if ( isString( date ) ) {
-        date = setDateArr( date );
-    }
+    date = getDate( date );
 
-    if ( getDateArr( date ) && isInteger( days ) ) {
+    if ( date && isInteger( days ) ) {
 
-        let [ , , year ] = date;
+        let { year } = date;
         let day = calcDayOfYear( date );
         let daysOfYear = countDaysOfYear( year );
 

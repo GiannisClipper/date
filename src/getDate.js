@@ -1,7 +1,8 @@
-import { getDateObj } from './getDateObj.js';
+import { getDateDate } from './getDateDate.js';
 import { getDateStr } from './getDateStr.js';
 import { getDateRepr } from './getDateRepr.js';
 import { getDateArr } from './getDateArr.js';
+import isDate from './isDate.js';
 
 /**
  * Gets day, month, year values of a date.
@@ -14,16 +15,26 @@ import { getDateArr } from './getDateArr.js';
 
 const getDate = value => {
 
-    let result = getDateObj( value );
+    let result = null;
+
+    if ( ( typeof value === 'object' ) &&
+        ( Object.keys( value ).reduce( ( keys, key ) => keys += key, '' ) === 'daymonthyear' ) &&
+        ( isDate( value.day, value.month, value.year ) ) ) {
+        result = value;
+    }
 
     if ( result === null ) {
-        result = getDateStr( value );
+        result = getDateDate( value );
 
         if ( result === null ) {
-            result = getDateRepr( value );
+            result = getDateStr( value );
 
             if ( result === null ) {
-                result = getDateArr( value );
+                result = getDateRepr( value );
+
+                if ( result === null ) {
+                    result = getDateArr( value );
+                }
             }
         }
     }

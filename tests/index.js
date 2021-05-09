@@ -10,10 +10,10 @@ import './isDate.js';
 
 import './getDateArr.js';
 import './getDateStr.js';
-import './getDateObj.js';
+import './getDateDate.js';
 import './setDateArr.js';
 import './setDateStr.js';
-import './setDateObj.js';
+import './setDateDate.js';
 
 import './opEqualTo.js';
 import './opGreaterThan.js';

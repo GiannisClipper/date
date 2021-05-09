@@ -9,7 +9,7 @@ import { getDate } from './getDate.js';
  * @returns { ( Date | null ) } - An instance of Date or null in case of invalid param
  */
 
-const setDateObj = value => {
+const setDateDate = value => {
 
     const result = getDate( value );
 
@@ -18,5 +18,5 @@ const setDateObj = value => {
         : null;
 }
 
-export default setDateObj;
-export { setDateObj };
+export default setDateDate;
+export { setDateDate };

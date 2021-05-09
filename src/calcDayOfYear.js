@@ -1,6 +1,4 @@
-import { isString } from './isString.js';
-import { setDateArr } from './setDateArr.js';
-import { getDateArr } from './getDateArr.js';
+import { getDate } from './getDate.js';
 import { countDaysOfMonth } from './countDaysOfMonth.js';
 
 /**
@@ -17,13 +15,11 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
 
 const calcDayOfYear = value => {
 
-    if ( isString( value ) ) {
-        value = setDateArr( value );
-    }
+    value = getDate( value );
 
-    if ( getDateArr( value ) ) {
+    if ( value ) {
 
-        const [ day, month, year ] = value;
+        const { day, month, year } = value;
 
         let pos = day;
         for ( let i = 1; i < month; i++ ) {

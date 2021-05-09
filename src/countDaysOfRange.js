@@ -1,15 +1,13 @@
-import { isString } from './isString.js';
 import { setDateArr } from './setDateArr.js';
-import { setDateStr } from './setDateStr.js';
-import { getDateArr } from './getDateArr.js';
+import { opLessThanEqualTo } from './opLessThanEqualTo.js';
 import { countDaysOfYear } from './countDaysOfYear.js';
 import { calcDayOfYear } from './calcDayOfYear.js';
 
 /**
  * Gets the number of the days of a date range including the starting and ending limits
  * 
- * @param { ( string | Object[] ) } from - The starting date of the range
- * @param { ( string | Object[] ) } till - The ending date of the range
+ * @param { ( Date | string | Object[] ) } from - The starting date of the range
+ * @param { ( Date | string | Object[] ) } till - The ending date of the range
  * 
  * @returns { ( number | null ) } - The the number of the days or null in case of invalid params
  * 
@@ -20,17 +18,12 @@ import { calcDayOfYear } from './calcDayOfYear.js';
 
 const countDaysOfRange = ( from, till ) => {
 
-    if ( isString( from ) ) {
-        from = setDateArr( from );
-    }
+    from = setDateArr( from );
+    till = setDateArr( till );
 
-    if ( isString( till ) ) {
-        till = setDateArr( till );
-    }
+    if ( from && till ) {
 
-    if ( getDateArr( from ) && getDateArr( till ) ) {
-
-        const [ _from, _till ] = setDateStr( from ) <= setDateStr( till )
+        const [ _from, _till ] = opLessThanEqualTo( from, till )
             ? [ from, till ]
             : [ till, from ];
 
@@ -51,7 +44,7 @@ const countDaysOfRange = ( from, till ) => {
         // subtract to correct result when dates are in the same year 
         days -= _fromYear === _tillYear ? countDaysOfYear( _fromYear ) : 0;
 
-        return setDateStr( from ) <= setDateStr( till )
+        return opLessThanEqualTo( from, till )
             ? days
             : days * -1;
     }
