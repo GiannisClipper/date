@@ -1,5 +1,5 @@
-import isDateStr from './isDateStr.js';
-import convertToDateStr from './convertToDateStr.js';
+import getDateStr from './getDateStr.js';
+import setDateStr from './setDateStr.js';
 
 /**
 * Validates an array of two or more dates
@@ -22,8 +22,8 @@ const compareValidation = dates => {
     for ( let i = 0; i < dates.length; i++ ) {
 
         dates[ i ] = 
-            ! isDateStr( dates[ i ] )
-            ? convertToDateStr( dates[ i ] )
+            ! getDateStr( dates[ i ] )
+            ? setDateStr( dates[ i ] )
             : dates[ i ];
 
         if ( dates[ i ] === null ) {

@@ -1,6 +1,6 @@
 import { isString } from './isString.js';
-import { convertToDateArr } from './convertToDateArr.js';
-import { isDateArr } from './isDateArr.js';
+import { setDateArr } from './setDateArr.js';
+import { getDateArr } from './getDateArr.js';
 import { countDaysOfRange } from './countDaysOfRange.js';
 
 /**
@@ -18,10 +18,10 @@ import { countDaysOfRange } from './countDaysOfRange.js';
 const findDayOfWeek = value => {
 
     if ( isString( value) ) {
-        value = convertToDateArr( value );
+        value = setDateArr( value );
     }
 
-    if ( isDateArr( value ) ) {
+    if ( getDateArr( value ) ) {
 
         const sampleDate = [ 1, 1, 2020 ];
         const samplefindDayOfWeek = 3;  // 01.01.2020 was wednesday

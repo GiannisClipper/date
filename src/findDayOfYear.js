@@ -1,6 +1,6 @@
 import { isString } from './isString.js';
-import { convertToDateArr } from './convertToDateArr.js';
-import { isDateArr } from './isDateArr.js';
+import { setDateArr } from './setDateArr.js';
+import { getDateArr } from './getDateArr.js';
 import { countDaysOfMonth } from './countDaysOfMonth.js';
 
 /**
@@ -18,10 +18,10 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
 const findDayOfYear = value => {
 
     if ( isString( value ) ) {
-        value = convertToDateArr( value );
+        value = setDateArr( value );
     }
 
-    if ( isDateArr( value ) ) {
+    if ( getDateArr( value ) ) {
 
         const [ day, month, year ] = value;
 

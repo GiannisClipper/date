@@ -8,12 +8,12 @@ import './isLeapYear.js';
 import './isMonth.js';
 import './isDate.js';
 
-import './isDateArr.js';
-import './isDateStr.js';
-
-import './convertToDateArr.js';
-import './convertToDateStr.js';
-import './convertToDateObj.js';
+import './getDateArr.js';
+import './getDateStr.js';
+import './getDateObj.js';
+import './setDateArr.js';
+import './setDateStr.js';
+import './setDateObj.js';
 
 import './compareValidation.js';
 import './compareEqualTo.js';
@@ -31,4 +31,3 @@ import './findDayOfWeek.js';
 import './findDayOfYear.js';
 import './findDateByDayOfYear.js';
 import './findDateByDaysAddition.js';
-
