@@ -3,19 +3,17 @@ import { getDateDate } from './getDateDate.js';
 import { getDateStr } from './getDateStr.js';
 import { getDateRepr } from './getDateRepr.js';
 import { getDateArr } from './getDateArr.js';
-import isDate from './isDate.js';
 
 /**
- * Gets day, month, year values of a date.
+ * Sets a date to an object expressing a date ({ day, month, year }).
  * A date could be a Date instance or a string in YYYYMMDD format or an array expressing a date ([ day, month, year ]).
  * 
- * @param { ( Object[] | Date | string ) } value - The value expressing a date
+ * @param { ( Date | string | Object[] ) } value - The date
  * 
- * @returns { ( Object | null ) } - The day, month, year values as an object or null in case of invalid param
+ * @returns { ( Object[] | null ) } - An object expressing a date or null in case of invalid param
  */
 
-const getDate = value => {
-
+const setDateObj = value => {
     let result = getDateObj( value );
 
     if ( result === null ) {
@@ -37,5 +35,5 @@ const getDate = value => {
     return result;
 }
 
-export default getDate;
-export { getDate };
+export default setDateObj;
+export { setDateObj };

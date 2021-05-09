@@ -1,4 +1,4 @@
-import { getDate } from './getDate.js';
+import { setDateObj } from './setDateObj.js';
 
 /**
  * Sets a date as a string in YYYYMMDD format.
@@ -11,7 +11,7 @@ import { getDate } from './getDate.js';
 
 const setDateStr = value => {
 
-    const result = getDate( value );
+    const result = setDateObj( value );
 
     return result !== null
         ? result.year.toString().padStart( 4, '0' )

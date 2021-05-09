@@ -1,4 +1,4 @@
-import { getDate } from './getDate.js';
+import { setDateObj } from './setDateObj.js';
 
 /**
  * Sets a date as a Date instance.
@@ -11,7 +11,7 @@ import { getDate } from './getDate.js';
 
 const setDateDate = value => {
 
-    const result = getDate( value );
+    const result = setDateObj( value );
 
     return result !== null
         ? new Date( result.year, result.month - 1, result.day, 12, 0, 0, 0 )  // hour=12 to assure against timezone or summertime

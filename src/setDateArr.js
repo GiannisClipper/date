@@ -1,5 +1,5 @@
 import { isString } from './isString.js';
-import { getDate } from './getDate.js';
+import { setDateObj } from './setDateObj.js';
 
 /**
  * Sets a date to an array expressing a date.
@@ -12,7 +12,7 @@ import { getDate } from './getDate.js';
 
 const setDateArr = value => {
 
-    const result = getDate( value );
+    const result = setDateObj( value );
 
     return result !== null
         ? [ result.day, result.month, result.year ]

@@ -1,4 +1,4 @@
-import { getDate } from './getDate.js';
+import { setDateObj } from './setDateObj.js';
 import { countDaysOfMonth } from './countDaysOfMonth.js';
 
 /**
@@ -15,7 +15,7 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
 
 const calcDayOfYear = value => {
 
-    value = getDate( value );
+    value = setDateObj( value );
 
     if ( value ) {
 

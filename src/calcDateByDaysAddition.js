@@ -1,5 +1,5 @@
 import { isInteger } from './isInteger.js';
-import { getDate } from './getDate.js';
+import { setDateObj } from './setDateObj.js';
 import { countDaysOfYear } from './countDaysOfYear.js';
 import { calcDayOfYear } from './calcDayOfYear.js';
 import { calcDateByDayOfYear } from './calcDateByDayOfYear.js';
@@ -20,7 +20,7 @@ import isYear from './isYear.js';
 
 const calcDateByDaysAddition = ( date, days ) => {
 
-    date = getDate( date );
+    date = setDateObj( date );
 
     if ( date && isInteger( days ) ) {
 

@@ -1,4 +1,4 @@
-import { getDate } from './getDate.js';
+import { setDateObj } from './setDateObj.js';
 import { config } from './config.js';
 
 /**
@@ -12,7 +12,7 @@ import { config } from './config.js';
 
 const setDateRepr = value => {
 
-    value = getDate( value );
+    value = setDateObj( value );
 
     if ( value !== null ) {
 

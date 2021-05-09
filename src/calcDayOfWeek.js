@@ -1,4 +1,4 @@
-import { getDate } from './getDate.js';
+import { setDateObj } from './setDateObj.js';
 import { countDaysOfRange } from './countDaysOfRange.js';
 
 /**
@@ -15,7 +15,7 @@ import { countDaysOfRange } from './countDaysOfRange.js';
 
 const calcDayOfWeek = value => {
 
-    value = getDate( value );
+    value = setDateObj( value );
 
     if ( value ) {
 
