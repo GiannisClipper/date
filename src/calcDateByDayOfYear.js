@@ -9,11 +9,11 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
  * @param { number } day - The day
  * @param { number } year - The year
  * 
- * @returns { ( Object[] | null ) } - An array expressing a date ([ day, month, year ]) or null in case of invalid params
+ * @returns { ( Object | null ) } - An object expressing a date ({ day, month, year }) or null in case of invalid params
  * 
  * @example
- * calcDateByDayOfYear( 32, 2021 ); // returns [ 1, 2, 2021 ]
- * calcDateByDayOfYear( 365, 2021 ); // returns [ 31, 12, 2021 ]
+ * calcDateByDayOfYear( 32, 2021 ); // returns { day: 1, month: 2, year: 2021 }
+ * calcDateByDayOfYear( 365, 2021 ); // returns { day: 31, month: 12, year: 2021 }
  */
 
 const calcDateByDayOfYear = ( day, year ) => {
@@ -29,7 +29,7 @@ const calcDateByDayOfYear = ( day, year ) => {
                 const maxMonthDay = countDaysOfMonth( month, year );
 
                 if ( day <= maxMonthDay ) {
-                    return [ day, month, year ];
+                    return { day, month, year };
 
                 } else {
                     day -= maxMonthDay;

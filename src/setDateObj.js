@@ -1,8 +1,8 @@
 import { getDateObj } from './getDateObj.js';
-import { getDateDate } from './getDateDate.js';
+import { getDateArr } from './getDateArr.js';
 import { getDateStr } from './getDateStr.js';
 import { getDateRepr } from './getDateRepr.js';
-import { getDateArr } from './getDateArr.js';
+import { getDateDate } from './getDateDate.js';
 
 /**
  * Sets a date to an object expressing a date ({ day, month, year }).
@@ -17,7 +17,7 @@ const setDateObj = value => {
     let result = getDateObj( value );
 
     if ( result === null ) {
-        result = getDateDate( value );
+        result = getDateArr( value );
 
         if ( result === null ) {
             result = getDateStr( value );
@@ -26,7 +26,7 @@ const setDateObj = value => {
                 result = getDateRepr( value );
 
                 if ( result === null ) {
-                    result = getDateArr( value );
+                    result = getDateDate( value );
                 }
             }
         }
