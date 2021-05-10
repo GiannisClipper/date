@@ -15,29 +15,40 @@ import { setDateObj } from './setDateObj.js';
 const setDateRepr = ( value, pattern ) => {
 
     pattern = isString( pattern )
-        ? pattern.toUpperCase()
-        : config.getReprPattern().toUpperCase();
+        ? pattern
+        : config.getReprPattern();
 
     value = setDateObj( value );
 
     if ( value !== null ) {
 
-        value.day = value.day.toString().split( '' );
-        value.month = value.month.toString().split( '' );
-        value.year = value.year.toString().split( '' );
+        let { day, month, year } = value;
+
+        day = day.toString().split( '' );
+        month = month.toString().split( '' );
+        year = year.toString().split( '' );
 
         let result ='';
 
         for ( let i = pattern.length - 1; i >= 0; i-- ) {
             switch( pattern[ i ] ) {
+                case 'd':
+                    result = ( day.pop() || '' ) + result;
+                    break;
                 case 'D':
-                    result = ( value.day.pop() || '0' ) + result;
+                    result = ( day.pop() || '0' ) + result;
+                    break;
+                case 'm':
+                    result = ( month.pop() || '' ) + result;
                     break;
                 case 'M':
-                    result = ( value.month.pop() || '0' ) + result;
+                    result = ( month.pop() || '0' ) + result;
+                    break;
+                case 'y':
+                    result = ( year.pop() || '' ) + result;
                     break;
                 case 'Y':
-                    result = ( value.year.pop() || '0' ) + result;
+                    result = ( year.pop() || '0' ) + result;
                     break;
                 default:
                     result = pattern[ i ] + result;

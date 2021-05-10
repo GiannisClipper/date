@@ -18,5 +18,6 @@ assert.strictEqual( setDateRepr( [ 31, 1, 2021 ] ), '31/01/2021', 'setDateRepr( 
 assert.strictEqual( setDateRepr( new Date( "bla.. bla.." ) ), null, 'setDateRepr( new Date( "bla.. bla.." ) )' );
 assert.strictEqual( setDateRepr( new Date( 2021, 0, 31 ) ), '31/01/2021', 'setDateRepr( new Date( 2021, 0, 31 ) )' );
 
-assert.strictEqual( setDateRepr( '20210131', 'YYYY-MM-DD' ), '2021-01-31', 'setDateRepr( "20210131", "YYYY-MM-DD" )' );
-assert.strictEqual( setDateRepr( '20210131', 'YY/MM' ), '21/01', 'setDateRepr( "20210101", "YY/MM" )' );
+assert.strictEqual( setDateRepr( '20210101', 'YYYY-MM-DD' ), '2021-01-01', 'setDateRepr( "20210101", "YYYY-MM-DD" )' );
+assert.strictEqual( setDateRepr( '20210101', 'dd/mm/yy' ), '1/1/21', 'setDateRepr( "20210101", "dd/mm/yy" )' );
+assert.strictEqual( setDateRepr( '20210131', 'yy/mm' ), '21/1', 'setDateRepr( "20210101", "YY/MM" )' );

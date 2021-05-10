@@ -18,27 +18,55 @@ import { isDate } from './isDate.js';
 const getDateRepr = ( value, pattern ) => {
 
     pattern = isString( pattern )
-        ? pattern.toUpperCase()
-        : config.getReprPattern().toUpperCase();
+        ? pattern
+        : config.getReprPattern();
 
-    if ( isString( value ) && value.length === pattern.length ) {
+    if ( isString( value ) && value.length <= pattern.length ) {
 
         let day = '';
         let month = '';
         let year = '';
 
-        for ( let i = 0; i < pattern.length; i++ ) {
+        let j = value.length - 1;
+    
+        for ( let i = pattern.length - 1; i >= 0; i-- ) {
             switch( pattern[ i ] ) {
+
+                case 'd':
+                    if ( '0123456789'.includes( value[ j ] ) ) {
+                        day = value[ j ] + day;
+                        j--;    
+                    }
+                    break;
                 case 'D':
-                    day += value[ i ];
+                    day = value[ j ] + day;
+                    j--;
+                    break;
+
+                case 'm':
+                    if ( '0123456789'.includes( value[ j ] ) ) {
+                        month = value[ j ] + month;
+                        j--;    
+                    }
                     break;
                 case 'M':
-                    month += value[ i ];
+                    month = value[ j ] + month;
+                    j--;
                     break;
+
+                case 'y':
+                    if ( '0123456789'.includes( value[ j ] ) ) {
+                        year = value[ j ] + year;
+                        j--;    
+                    }
+                    break;    
                 case 'Y':
-                    year += value[ i ];
+                    year = value[ j ] + year;
+                    j--;
                     break;
+    
                 default:
+                    j--;
             }
         }
 

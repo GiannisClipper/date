@@ -12,5 +12,8 @@ assert.strictEqual( getDateRepr( [] ), null, 'getDateRepr( [] )' );
 assert.strictEqual( getDateRepr( {} ), null, 'getDateRepr( {} )' );
 assert.strictEqual( getDateRepr( "20210101" ), null, 'getDateRepr( "20210101" )' );
 
-assert.deepStrictEqual( getDateRepr( "31/12/2021" ), { day: 31, month: 12, year: 2021 }, 'getDateRepr( "31/12/2021" )' );
-assert.deepStrictEqual( getDateRepr( "2021-12-31", "YYYY-MM-DD" ), { day: 31, month: 12, year: 2021 }, 'getDateRepr( "2021-31-12", "YYYY-MM-DD" )' );
+assert.deepStrictEqual( getDateRepr( "01/01/2021" ), { day: 1, month: 1, year: 2021 }, 'getDateRepr( "01/01/2021" )' );
+assert.deepStrictEqual( getDateRepr( "2021-01-01", "YYYY-MM-DD" ), { day: 1, month: 1, year: 2021 }, 'getDateRepr( "2021-01-01", "YYYY-MM-DD" )' );
+
+assert.deepStrictEqual( getDateRepr( "1/1/2021", "dd/mm/yyyy" ), { day: 1, month: 1, year: 2021 }, 'getDateRepr( "1/1/2021", "dd/mm/yyyy" )' );
+assert.deepStrictEqual( getDateRepr( "2021-1-1", "YYYY-mm-dd" ), { day: 1, month: 1, year: 2021 }, 'getDateRepr( "2021-01-01", "YYYY-mm-dd" )' );
