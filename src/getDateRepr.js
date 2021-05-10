@@ -1,11 +1,12 @@
-import { config } from './config.js';
 import { isString } from './isString.js';
+import { config } from './config.js';
 import { isDate } from './isDate.js';
 
 /**
  * Gets the day, month, year values of a string expressing a date (in representation format)
  * 
  * @param { string } value - The string
+ * @param { string } [ pattern ] - A representation pattern
  * 
  * @returns { ( Object | null ) } - The day, month, year values as an object or null in case of invalid param
  * 
@@ -14,9 +15,11 @@ import { isDate } from './isDate.js';
  * getDateRepr( '20210101' ); // returns null
  */
 
-const getDateRepr = value => {
+const getDateRepr = ( value, pattern ) => {
 
-    const pattern = config.getReprPattern().toUpperCase();
+    pattern = isString( pattern )
+        ? pattern.toUpperCase()
+        : config.getReprPattern().toUpperCase();
 
     if ( isString( value ) && value.length === pattern.length ) {
 

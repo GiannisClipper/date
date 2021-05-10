@@ -1,16 +1,22 @@
-import { setDateObj } from './setDateObj.js';
+import { isString } from './isString.js';
 import { config } from './config.js';
+import { setDateObj } from './setDateObj.js';
 
 /**
  * Sets a date as a string in representation format.
  * A date could be a Date instance or a string in YYYYMMDD format or an array expressing a date ([ day, month, year ]).
  * 
  * @param { ( Date | string | Object[] ) } value - The date
+ * @param { string } [ pattern ] - A representation pattern
  * 
  * @returns { ( string | null ) } - A string in representation format or null in case of invalid param
  */
 
-const setDateRepr = value => {
+const setDateRepr = ( value, pattern ) => {
+
+    pattern = isString( pattern )
+        ? pattern.toUpperCase()
+        : config.getReprPattern().toUpperCase();
 
     value = setDateObj( value );
 
@@ -19,8 +25,6 @@ const setDateRepr = value => {
         value.day = value.day.toString().split( '' );
         value.month = value.month.toString().split( '' );
         value.year = value.year.toString().split( '' );
-
-        const pattern = config.getReprPattern().toUpperCase();
 
         let result ='';
 
