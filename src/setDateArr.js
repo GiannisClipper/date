@@ -7,8 +7,6 @@ import { setDateObj } from './setDateObj.js';
  * @param { ( Object | string | Object[] | Date ) } value - The date
  * 
  * @returns { ( Object[] | null ) } - An array ([ year, month, day ]) or null in case of invalid param
- * 
- * @example
  */
 
 const setDateArr = value => {

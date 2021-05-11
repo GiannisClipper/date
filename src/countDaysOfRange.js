@@ -6,8 +6,8 @@ import { calcDayOfYear } from './calcDayOfYear.js';
 /**
  * Gets the number of the days of a date range including the starting and ending limits
  * 
- * @param { ( Date | string | Object[] ) } from - The starting date of the range
- * @param { ( Date | string | Object[] ) } till - The ending date of the range
+ * @param { ( Object | string | Object[] | Date ) } from - The starting date of the range
+ * @param { ( Object | string | Object[] | Date ) } till - The ending date of the range
  * 
  * @returns { ( number | null ) } - The the number of the days or null in case of invalid params
  * 

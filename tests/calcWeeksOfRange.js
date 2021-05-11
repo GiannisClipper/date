@@ -8,11 +8,11 @@ assert.deepStrictEqual( calcWeeksOfRange( "bla.. bla.." ), null, 'calcWeeksOfRan
 assert.deepStrictEqual( calcWeeksOfRange( "20210515", 123 ), null, 'calcWeeksOfRange( "20210515", 123 )' );
 
 assert.deepStrictEqual( calcWeeksOfRange( "20210501", "20210515" ), [
-    [ { day: 26, month: 4, year: 2021 }, { day: 2, month: 5, year: 2021 } ],
-    [ { day: 3, month: 5, year: 2021 }, { day: 9, month: 5, year: 2021 } ],
-    [ { day: 10, month: 5, year: 2021 }, { day: 16, month: 5, year: 2021 } ]
+    [ { year: 2021, month: 4, day: 26 }, { year: 2021, month: 5, day: 2 } ],
+    [ { year: 2021, month: 5, day: 3 }, { year: 2021, month: 5, day: 9 } ],
+    [ { year: 2021, month: 5, day: 10 }, { year: 2021, month: 5, day: 16 } ]
 ], 'calcWeeksOfRange( "20210501", "20210515" )' );
 
 assert.deepStrictEqual( calcWeeksOfRange( "20201231", "20210101" ), [
-    [ { day: 28, month: 12, year: 2020 }, { day: 3, month: 1, year: 2021 } ],
+    [ { year: 2020, month: 12, day: 28 }, { year: 2021, month: 1, day: 3 } ],
 ], 'calcWeeksOfRange( "20201231", "20210101" )' );
