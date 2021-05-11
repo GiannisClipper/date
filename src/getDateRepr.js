@@ -3,12 +3,12 @@ import { config } from './config.js';
 import { isDate } from './isDate.js';
 
 /**
- * Gets the day, month, year values of a string expressing a date (in representation format)
+ * Extracts date values from a string (in representation format)
  * 
- * @param { string } value - The string
+ * @param { string } value - The string expressing a date
  * @param { string } [ pattern ] - A representation pattern
  * 
- * @returns { ( Object | null ) } - The day, month, year values as an object or null in case of invalid param
+ * @returns { ( Object | null ) } - An object expressing a date ({ year, month, day }) or null in case of invalid param
  * 
  * @example
  * getDateRepr( '01/01/2021' ); // returns { day: 1, month: 1, year: 2021 }
@@ -32,17 +32,6 @@ const getDateRepr = ( value, pattern ) => {
         for ( let i = pattern.length - 1; i >= 0; i-- ) {
             switch( pattern[ i ] ) {
 
-                case 'd':
-                    if ( '0123456789'.includes( value[ j ] ) ) {
-                        day = value[ j ] + day;
-                        j--;    
-                    }
-                    break;
-                case 'D':
-                    day = value[ j ] + day;
-                    j--;
-                    break;
-
                 case 'm':
                     if ( '0123456789'.includes( value[ j ] ) ) {
                         month = value[ j ] + month;
@@ -65,17 +54,28 @@ const getDateRepr = ( value, pattern ) => {
                     j--;
                     break;
     
+                case 'd':
+                    if ( '0123456789'.includes( value[ j ] ) ) {
+                        day = value[ j ] + day;
+                        j--;    
+                    }
+                    break;
+                case 'D':
+                    day = value[ j ] + day;
+                    j--;
+                    break;
+
                 default:
                     j--;
             }
         }
 
-        day = parseInt( day );
-        month = parseInt( month );
         year = parseInt( year );
+        month = parseInt( month );
+        day = parseInt( day );
 
-        if ( isDate( day, month, year ) ) {
-            return { day, month, year };
+        if ( isDate( year, month, day ) ) {
+            return { year, month, day };
         }
     }
 

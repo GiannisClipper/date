@@ -11,7 +11,7 @@ function test_setDateDate() {
 
     assert.strictEqual( setDateDate( [] ), null, 'setDateDate( [] )' );
     assert.strictEqual( setDateDate( [ 1, 1, 1, 1 ] ), null, 'setDateDate( [ 1, 1, 1, 1 ] )' );
-    assert.deepStrictEqual( setDateDate( [ 1, 1, 2021 ] ), new Date( 2021, 0, 1, 12 ), 'setDateDate( [ 1, 1, 2021 ] )' );
+    assert.deepStrictEqual( setDateDate( [ 2021, 1, 1 ] ), new Date( 2021, 0, 1, 12 ), 'setDateDate( [ 2021, 1, 1 ] )' );
 
     assert.deepStrictEqual( setDateDate( new Date( 2021, 0, 31 ) ), new Date( 2021, 0, 31, 12 ), 'setDateDate( new Date( 2021, 0, 31 ) )' );
 }

@@ -19,7 +19,7 @@ const calcDayOfYear = value => {
 
     if ( value ) {
 
-        const { day, month, year } = value;
+        const { year, month, day } = value;
 
         let pos = day;
         for ( let i = 1; i < month; i++ ) {

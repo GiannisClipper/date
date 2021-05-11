@@ -8,12 +8,15 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
  * 
  * @param { number } day - The day (from 1 to 28/29/30/31)
  * @param { number } month - The month (from 1 to 12)
- * @param { number } year - The year (from 1900 to 2099)
+ * @param { number } year - The year (from 1900 to 2099 by default)
  * 
  * @returns { boolean } - True or false
+ * @example
+ * isDate( 2021, 1, 31 ); // returns true
+ * isDate( 2021, 1, 32 ); // return false
  */
 
-const isDate = ( day, month, year ) => {
+const isDate = ( year, month, day ) => {
 
     if ( isInteger( day ) && isMonth( month ) && isYear( year ) ) {
 

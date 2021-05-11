@@ -19,8 +19,8 @@ const calcDayOfWeek = value => {
 
     if ( value ) {
 
-        const sampleDate = [ 1, 1, 2020 ];
-        const samplecalcDayOfWeek = 3;  // 01.01.2020 was wednesday
+        const sampleDate = [ 2020, 1, 1 ];
+        const samplecalcDayOfWeek = 3;  // 1 Jan of 2020 was wednesday
 
         const daysBetween = countDaysOfRange( sampleDate, value ) - 1;
         const dayOffset = daysBetween % 7;

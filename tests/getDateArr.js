@@ -9,8 +9,8 @@ function test_getDateArr() {
     assert.strictEqual( getDateArr( 'bla.. bla..' ), null, 'getDateArr( "bla.. bla.." )' );
     assert.strictEqual( getDateArr( [] ), null, 'getDateArr( [] )' );
     assert.strictEqual( getDateArr( {} ), null, 'getDateArr( {} )' );
-    assert.strictEqual( getDateArr( [ 0, 1, 2021 ] ), null, 'getDateArr( [ 32, 1, 2021 ] )' );
-    assert.deepStrictEqual( getDateArr( [ 1, 1, 2021 ] ), { day: 1, month: 1, year: 2021 }, 'getDateArr( [ 1, 1, 2021 ] )' );
+    assert.strictEqual( getDateArr( [ 2021, 1, 0 ] ), null, 'getDateArr( [ 2021, 1, 0 ] )' );
+    assert.deepStrictEqual( getDateArr( [ 2021, 1, 1 ] ), { year: 2021, month: 1, day: 1 }, 'getDateArr( [ 2021, 1, 1 ] )' );
 }
 
 console.log( 'Testing getDateArr...' );

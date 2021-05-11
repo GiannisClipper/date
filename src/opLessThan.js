@@ -1,10 +1,10 @@
 import setDateStr from './setDateStr.js';
 
 /**
-* Operates a comparison between two dates, the first should be less than to the second
+* Operates a comparison between two dates where the first should be less than to the second
 * 
-* @param { ...( Date | string | Object[] ) } date1 - The first date
-* @param { ...( Date | string | Object[] ) } date2 - The second date
+* @param { ( Object | string | Object[] | Date ) } date1 - The first date
+* @param { ( Object | string | Object[] | Date ) } date2 - The second date
 * 
 * @returns { boolean } - True or false or null on invalid params
 * 

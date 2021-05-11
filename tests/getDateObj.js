@@ -11,7 +11,5 @@ assert.strictEqual( getDateObj( 'bla.. bla..' ), null, 'getDateObj( "bla.. bla..
 assert.strictEqual( getDateObj( [] ), null, 'getDateObj( [] )' );
 assert.strictEqual( getDateObj( {} ), null, 'getDateObj( {} )' );
 
-assert.strictEqual( getDateObj( { day: 0, month: 1, year: 2021 } ), null, 'getDateObj( { day: 0, month: 1, year: 2021 } )' );
-assert.strictEqual( getDateObj( { date: 1, month: 1, year: 2021 } ), null, 'getDateObj( { date: 1, month: 1, year: 2021 } )' );
-assert.deepStrictEqual( getDateObj( { day: 1, month: 1, year: 2021 } ), { day: 1, month: 1, year: 2021 }, 'getDateObj( { day: 1, month: 1, year: 2021 } )' );
-assert.deepStrictEqual( getDateObj( { year: 2021, month: 1, day: 1 } ), { day: 1, month: 1, year: 2021 }, 'getDateObj( { day: 1, month: 1, year: 2021 } )' );
+assert.strictEqual( getDateObj( { year: 2021, month: 1, day: 0 } ), null, 'getDateObj( { year: 2021, month: 1, day: 0 } )' );
+assert.deepStrictEqual( getDateObj( { year: 2021, month: 1, day: 1 } ), { year: 2021, month: 1, day: 1 }, 'getDateObj( { day: 1, month: 1, year: 2021 } )' );

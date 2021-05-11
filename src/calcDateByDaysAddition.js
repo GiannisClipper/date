@@ -11,11 +11,11 @@ import isYear from './isYear.js';
  * @param { ( string | Object[] ) } from - The starting date
  * @param { number } days - The number of days to be added
  * 
- * @returns { ( Object[] | null ) } - An array expressing a date ([ day, month, year ]) or null in case of invalid params
+ * @returns { ( Object[] | null ) } - An array expressing a date ([ year, month, day ]) or null in case of invalid params
  * 
  * @example
- * calcDateByDaysAddition( "20210110", 10 ); // returns [ 20, 1, 2021 ]
- * calcDateByDaysAddition( "20210110", -10 ); // returns [ 31, 12, 2020 ]
+ * calcDateByDaysAddition( "20210110", 10 ); // returns [ 2021, 1, 20 ]
+ * calcDateByDaysAddition( "20210110", -10 ); // returns [ 2020, 12, 31 ]
  */
 
 const calcDateByDaysAddition = ( date, days ) => {

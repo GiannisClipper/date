@@ -5,7 +5,7 @@ function test_calcDayOfWeek() {
     assert.strictEqual( calcDayOfWeek(), null, 'calcDayOfWeek()' );
     assert.strictEqual( calcDayOfWeek( [] ), null, 'calcDayOfWeek( [] )' );
     assert.strictEqual( calcDayOfWeek( [ "bla.. bla.." ] ), null, 'calcDayOfWeek( [ "bla... bla..." ] )' );
-    assert.strictEqual( calcDayOfWeek( [ 6, 5, 2021 ] ), 4, 'calcDayOfWeek( [ 6, 5, 2021 ] )' );
+    assert.strictEqual( calcDayOfWeek( [ 2021, 5, 6 ] ), 4, 'calcDayOfWeek( [ 2021, 5, 6 ] )' );
     assert.strictEqual( calcDayOfWeek( '' ), null, 'calcDayOfWeek( ""' );
     assert.strictEqual( calcDayOfWeek( 'bla.. bla..' ), null, 'calcDayOfWeek( "bla.. bla.." )' );
     assert.strictEqual( calcDayOfWeek( '20210315' ), 1, 'calcDayOfWeek( "20210315" )' );

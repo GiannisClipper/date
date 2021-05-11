@@ -5,11 +5,6 @@ import { isString } from './isString.js';
  * Sets and gets configuration values
  * 
  * @namespace
- * 
- * @example
- * config.getYearRange(); // returns [ 1900, 2099 ]
- * config.setYearRange( 1800, 2199 ); // returns true
- * config.getYearRange(); // returns [ 1800, 2199 ]
  */
 
  const config = {
@@ -17,7 +12,7 @@ import { isString } from './isString.js';
     /** @lends config */
 
     /**
-    * Sets the range of valid years, that is by default from 1900 to 2099
+    * Sets the range of valid years (by default from 1900 to 2099)
     * 
     * @param { number } from - The starting year
     * @param { number } till - The ending year
@@ -67,7 +62,7 @@ import { isString } from './isString.js';
     },
 
     /**
-    * Sets the pattern for the date representation, that is by default DD/YY/YYYY
+    * Sets the pattern for the date representation (by default DD/MM/YYYY)
     * 
     * @param { string } pattern - The pattern
     * 

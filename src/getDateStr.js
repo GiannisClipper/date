@@ -2,11 +2,11 @@ import { isString } from './isString.js';
 import { isDate } from './isDate.js';
 
 /**
- * Gets the day, month, year values of a string expressing a date (in YYYYMMDD format)
+ * Extracts date values from a string (in YYYYMMDD format)
  * 
- * @param { string } value - The string
+ * @param { string } value - The string expressing a date
  * 
- * @returns { ( Object | null ) } - The day, month, year values as an object or null in case of invalid param
+ * @returns { ( Object | null ) } - An object expressing a date ({ year, month, day }) or null in case of invalid param
  * 
  * @example
  * getDateStr( '20210101' ); // returns { day: 1, month: 1, year: 2021 }
@@ -17,12 +17,12 @@ const getDateStr = value => {
 
     if ( isString( value ) && value.length === 8 ) {
 
-        const day = parseInt( value.substring( 6, 8 ) );
-        const month = parseInt( value.substring( 4, 6 ) );
         const year = parseInt( value.substring( 0, 4 ) );
+        const month = parseInt( value.substring( 4, 6 ) );
+        const day = parseInt( value.substring( 6, 8 ) );
 
-        if ( isDate( day, month, year ) ) {
-            return { day, month, year };
+        if ( isDate( year, month, day ) ) {
+            return { year, month, day };
         }
     }
 

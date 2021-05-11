@@ -5,12 +5,11 @@ import { getDateRepr } from './getDateRepr.js';
 import { getDateDate } from './getDateDate.js';
 
 /**
- * Sets a date to an object expressing a date ({ day, month, year }).
- * A date could be a Date instance or a string in YYYYMMDD format or an array expressing a date ([ day, month, year ]).
+ * Creates an object expressing a date ({ year, month, day })
  * 
- * @param { ( Date | string | Object[] ) } value - The date
+ * @param { ( Object | string | Object[] | Date ) } value - The date
  * 
- * @returns { ( Object[] | null ) } - An object expressing a date or null in case of invalid param
+ * @returns { ( Object[] | null ) } - An object ({ year, month, day }) or null in case of invalid param
  */
 
 const setDateObj = value => {

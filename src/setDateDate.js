@@ -1,12 +1,11 @@
 import { setDateObj } from './setDateObj.js';
 
 /**
- * Sets a date as a Date instance.
- * A date could be a Date instance or a string in YYYYMMDD format or an array expressing a date ([ day, month, year ]).
+ * Creates a Date instance
  * 
- * @param { ( Date | string | Object[] ) } value - The date
+ * @param { ( Object | string | Object[] | Date ) } value - The date
  * 
- * @returns { ( Date | null ) } - An instance of Date or null in case of invalid param
+ * @returns { ( Date | null ) } - An Date instance or null in case of invalid param
  */
 
 const setDateDate = value => {

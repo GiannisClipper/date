@@ -27,8 +27,8 @@ const countDaysOfRange = ( from, till ) => {
             ? [ from, till ]
             : [ till, from ];
 
-        const [ , , _fromYear ] = _from;
-        const [ , , _tillYear ] = _till;
+        const [ _fromYear,, ] = _from;
+        const [ _tillYear,, ] = _till;
 
         // add the starting day and the rest days of that year
         let days = 1 + countDaysOfYear( _fromYear ) - calcDayOfYear( _from );

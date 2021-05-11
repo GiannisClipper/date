@@ -1,10 +1,9 @@
 import { setDateObj } from './setDateObj.js';
 
 /**
- * Sets a date as a string in YYYYMMDD format.
- * A date could be a Date instance or a string in YYYYMMDD format or an array expressing a date ([ day, month, year ]).
+ * Creates a string expressing a date (in YYYYMMDD format)
  * 
- * @param { ( Date | string | Object[] ) } value - The date
+ * @param { ( Object | string | Object[] | Date ) } value - The date
  * 
  * @returns { ( string | null ) } - A string in YYYYMMDD format or null in case of invalid param
  */

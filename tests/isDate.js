@@ -11,17 +11,17 @@ function test_isDate() {
     assert.strictEqual( isDate( {} ), false, 'isDate( {} )' );
     assert.strictEqual( isDate( 1, 1 ), false, 'isDate( 1, 1' );
     assert.strictEqual( isDate( 1, 1, -1 ), false, 'isDate( 1, 1, -1' );
-    assert.strictEqual( isDate( 1, 1, "2021" ), false, 'isDate( 1, 1, "2021" )' );
-    assert.strictEqual( isDate( 1, 1, 2021 ), true, 'isDate( 1, 1, 2021 )' );
-    assert.strictEqual( isDate( 31, 1, 2021 ), true, 'isDate( 31, 1, 2021 )' );
-    assert.strictEqual( isDate( 31, 2, 2021 ), false, 'isDate( 31, 2, 2021 )' );
-    assert.strictEqual( isDate( 30, 2, 2021 ), false, 'isDate( 30, 2, 2021 )' );
-    assert.strictEqual( isDate( 29, 2, 2021 ), false, 'isDate( 29, 2, 2021 )' );
-    assert.strictEqual( isDate( 28, 2, 2021 ), true, 'isDate( 28, 2, 2021 )' );
-    assert.strictEqual( isDate( 30, 2, 2024 ), false, 'isDate( 30, 2, 2024 )' );
-    assert.strictEqual( isDate( 29, 2, 2024 ), true, 'isDate( 29, 2, 2024 )' );
-    assert.strictEqual( isDate( 0, 3, 2021 ), false, 'isDate( 0, 3, 2021 )' );
-    assert.strictEqual( isDate( -1, 3, 2021 ), false, 'isDate( -1, 3, 2021 )' );
+    assert.strictEqual( isDate( "2021", 1, 1 ), false, 'isDate( "2021",  1, 1 )' );
+    assert.strictEqual( isDate( 2021, 1, 1 ), true, 'isDate( 2021, 1, 1 )' );
+    assert.strictEqual( isDate( 2021, 1, 31 ), true, 'isDate( 2021, 1, 31 )' );
+    assert.strictEqual( isDate( 2021, 2, 31 ), false, 'isDate( 2021, 2, 31 )' );
+    assert.strictEqual( isDate( 2021, 2, 30 ), false, 'isDate( 2021, 2, 30 )' );
+    assert.strictEqual( isDate( 2021, 2, 29 ), false, 'isDate( 2021, 2, 29 )' );
+    assert.strictEqual( isDate( 2021, 2, 28 ), true, 'isDate( 2021, 2, 28 )' );
+    assert.strictEqual( isDate( 2024, 2, 30 ), false, 'isDate( 2024, 2, 30 )' );
+    assert.strictEqual( isDate( 2024, 2, 29 ), true, 'isDate( 2034, 2, 29 )' );
+    assert.strictEqual( isDate( 2021, 3, 0 ), false, 'isDate( 2021, 3, 0 )' );
+    assert.strictEqual( isDate( 2021, 3, -1 ), false, 'isDate( 2021, 3, -1 )' );
 }
 
 console.log( 'Testing isDate...' );
