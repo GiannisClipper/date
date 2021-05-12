@@ -11,6 +11,11 @@
         "type": "git",
         "url": "git://github.com/giannisclipper/date.git"
     },
+    "files": [
+        "README.md",
+        "LICENSE",
+        "/src"
+    ],
     "author": "Giannis Clipper",
     "license": "MIT"
 }
