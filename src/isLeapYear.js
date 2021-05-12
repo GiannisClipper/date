@@ -17,4 +17,5 @@ const isLeapYear = ( value, from, till ) => {
     return isInteger( value ) && value % 4 === 0 && ( value % 100 !== 0 || value % 400 === 0 );
 }
 
+export default isLeapYear;
 export { isLeapYear };
