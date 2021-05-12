@@ -1,7 +1,7 @@
 {
     "name": "@giannisclipper/date",
     "version": "1.0.0",
-    "description": "A set of functions handling date values.",
+    "description": "A set of functions handling date values in various value forms.",
     "type": "module",
     "main": "./src/index.js",
     "devDependencies": {

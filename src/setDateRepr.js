@@ -9,6 +9,14 @@ import { setDateObj } from './setDateObj.js';
  * @param { string } [ pattern ] - A representation pattern
  * 
  * @returns { ( string | null ) } - A string in representation format or null in case of invalid params
+ * 
+ * @example
+ * setDateRepr( { year: 2021, month: 1, day: 31 } ); // returns '31/12/2021'
+ * setDateRepr( [ 2021, 1, 31 ] ); // returns '31/12/2021'
+ * setDateRepr( '20210131' ); // returns '31/12/2021'
+ * setDateRepr( '31/01/2021' ); // returns '31/12/2021'
+ * setDateRepr( new Date( 2021, 0, 31 ) ); // returns '31/12/2021'
+ * setDateRepr(); // returns null
  */
 
 const setDateRepr = ( value, pattern ) => {

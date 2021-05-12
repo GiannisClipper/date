@@ -12,8 +12,9 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
  * @returns { ( Object | null ) } - An object expressing a date ({ year:, month:, day: }) or null in case of invalid params
  * 
  * @example
- * calcDateByDayOfYear( 32, 2021 ); // returns { day: 1, month: 2, year: 2021 }
- * calcDateByDayOfYear( 365, 2021 ); // returns { day: 31, month: 12, year: 2021 }
+ * calcDateByDayOfYear( 32, 2021 ); // returns { year: 2021, month: 2, day: 1 }
+ * calcDateByDayOfYear( 365, 2021 ); // returns { year: 2021, month: 12, day: 31 }
+ * calcDateByDayOfYear(); // returns null
  */
 
 const calcDateByDayOfYear = ( day, year ) => {

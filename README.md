@@ -5,27 +5,27 @@ _(trial version, some things left to be done according to documentation)_
 
     * __set*()__, to create various value forms expressing a date:
 
-        * __setDateObj( value )__, a simple object with integer values { year:, month:, day: }
+        * __setDateObj( value )__, a simple object with integer values ({ year:, month:, day: })
 
-        * __setDateArray( value )__, an array of integers [ yaer, month, day ]
+        * __setDateArray( value )__, an array of integers ([ yaer, month, day ])
 
-        * __setDateStr( value )__, a string like 'YYYYMMDD' where YYYY is for the year, MM for the month, DD for the day
+        * __setDateStr( value )__, a string (in form of 'YYYYMMDD' where YYYY for year, MM for month, DD for day)
 
-        * __setDateRepr( value, pattern )__ a representation string like 'DD/MM/YYYY' by default but customizable to other patterns 
+        * __setDateRepr( value, pattern )__ a representation string (like 'DD/MM/YYYY' by default but customizable to other patterns)
 
         * __setDateDate( value )__ an instance of JS Date class
 
     * __get*()__, to evaluate and retrieve the date values from the above forms:
 
-        * __getDateObj( value )__, from an object with integer values { year:, month:, day: }
+        * __getDateObj( value )__, date values from an object ({ year:, month:, day: })
 
-        * __getDateArray( value )__, from an array of integers [ yaer, month, day ]
+        * __getDateArray( value )__, date values from an array of integers ([ yaer, month, day ])
 
-        * __getDateStr( value )__, from a string like 'YYYYMMDD'
+        * __getDateStr( value )__, date values from a string (in form of 'YYYYMMDD')
 
-        * __getDateRepr( value, pattern )__, from a representation string like 'DD/MM/YYYY'
+        * __getDateRepr( value, pattern )__, date values from a representation string (like 'DD/MM/YYYY')
 
-        * __getDateDate( value )__, from an instance of JS Date class
+        * __getDateDate( value )__, date values from an instance of JS Date class
 
     * __op*()__, to compare two date values:
 

@@ -1,7 +1,7 @@
 /**
- * Checks if a value is an integer
+ * Validates if a value is an integer
  * 
- * @param { number } value - The value to be checked
+ * @param { number } value - The value to be validated
  * 
  * @returns { boolean } - True or false
  */

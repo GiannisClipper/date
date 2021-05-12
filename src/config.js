@@ -20,8 +20,8 @@ import { isString } from './isString.js';
     * @returns { boolean } - True on success or false on invalid params
     * 
     * @example
-    * config.setYearRange( '1800-2199' ); // returns false
-    * config.setYearRange( 1800, 2199 ); // returns true
+    * config.setYearRange( 1850, 2149 ); // returns true
+    * config.setYearRange( '1850-2149' ); // returns false
     */
 
     setYearRange( from, till ) {
@@ -69,8 +69,8 @@ import { isString } from './isString.js';
     * @returns { boolean } - True on success or false on invalid param
     * 
     * @example
-    * config.setReprPattern( 0 ); // returns false
     * config.setReprPattern( 'DD-MM-YY' ); // returns true
+    * config.setReprPattern( 0 ); // returns false
     */
 
      setReprPattern( pattern ) {

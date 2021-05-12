@@ -10,6 +10,14 @@ import { getDateDate } from './getDateDate.js';
  * @param { ( Object | Object[] | string | Date ) } value - A date value
  * 
  * @returns { ( Object | null ) } - An object ({ year:, month:, day: }) or null in case of invalid param
+ * 
+ * @example
+ * setDateObj( { year: 2021, month: 1, day: 31 } ); // returns { year: 2021, month: 1, day: 31 }
+ * setDateObj( [ 2021, 1, 31 ] ); // returns { year: 2021, month: 1, day: 31 }
+ * setDateObj( '20210131' ); // returns { year: 2021, month: 1, day: 31 }
+ * setDateObj( '31/01/2021' ); // returns { year: 2021, month: 1, day: 31 }
+ * setDateObj( new Date( 2021, 0, 31 ) ); // returns { year: 2021, month: 1, day: 31 }
+ * setDateObj(); // returns null
  */
 
 const setDateObj = value => {

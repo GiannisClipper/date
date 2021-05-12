@@ -16,6 +16,7 @@ import isYear from './isYear.js';
  * @example
  * calcDateByDaysAddition( "20210110", 10 ); // returns [ 2021, 1, 20 ]
  * calcDateByDaysAddition( "20210110", -10 ); // returns [ 2020, 12, 31 ]
+ * calcDateByDaysAddition( "20210110" ); // returns null
  */
 
 const calcDateByDaysAddition = ( date, days ) => {

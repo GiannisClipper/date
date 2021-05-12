@@ -8,8 +8,8 @@ import { isInteger } from './isInteger.js';
  * @returns { boolean } - True or false
  * 
  * @example
- * isLeapYear( 2021 ); // returns false
- * isLeapYear( 2024 ); // return true
+ * isLeapYear( 2020 ); // returns true
+ * isLeapYear( 2021 ); // return false
  */
 
 const isLeapYear = ( value, from, till ) => {

@@ -15,6 +15,7 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
  * @example
  * isDate( 2021, 1, 31 ); // returns true
  * isDate( 2021, 1, 32 ); // return false
+ * isDate( 2021 ); // returns false
  */
 
 const isDate = ( year, month, day ) => {

@@ -9,8 +9,10 @@ import setDateStr from './setDateStr.js';
 * @returns { boolean } - True or false or null on invalid params
 * 
 * @example
-* opEqualTo( '20210101', '20210101' );  // returns true
-* opEqualTo( '20210101', '20210102' );  // returns false
+* opEqualTo( '01/01/2021', '02/01/2021' ); // returns false
+* opEqualTo( '02/01/2021', '02/01/2021' ); // returns true
+* opEqualTo( '03/01/2021', '02/01/2021' ); // returns false
+* opEqualTo(); // returns null
 */
 
 const opEqualTo = ( date1, date2 ) => {

@@ -9,8 +9,10 @@ import setDateStr from './setDateStr.js';
 * @returns { boolean } - True or false or null on invalid params
 * 
 * @example
-* opGreaterThan( '20210102', '20210101' );  // returns true
-* opGreaterThan( '20210102', '20210102' );  // returns false
+* opGreaterThan( '01/01/2021', '02/01/2021' ); // returns false
+* opGreaterThan( '02/01/2021', '02/01/2021' ); // returns false
+* opGreaterThan( '03/01/2021', '02/01/2021' ); // returns true
+* opGreaterThan(); // returns null
 */
 
 const opGreaterThan = ( date1, date2 ) => {

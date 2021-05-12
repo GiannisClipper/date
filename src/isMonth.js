@@ -6,6 +6,10 @@ import { isInteger } from './isInteger.js';
  * @param { number } value - A value to be validated
  * 
  * @returns { boolean } - True or false
+ * 
+ * @example
+ * isMonth( 12 ); // returns true
+ * isMonth( 'December'); // returns false
  */
 
 const isMonth = value => {

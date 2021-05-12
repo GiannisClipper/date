@@ -8,7 +8,7 @@ import { isDate } from './isDate.js';
  * @returns { ( Object | null ) } - An object with the date values ({ year:, month:, day: }) or null in case of invalid param
  * 
  * @example
- * getDateObj( { year: 2021, month: 1, day: 1 } ); // returns { year: 2021, month: 1, day: 1 }
+ * getDateObj( { year: 2021, month: 1, day: 31 } ); // returns { year: 2021, month: 1, day: 31 }
  * getDateObj( { year: 2021, month: 1 } ); // returns null
  */
 

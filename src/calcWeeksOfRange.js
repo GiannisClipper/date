@@ -13,11 +13,12 @@ import { calcDateByDaysAddition } from './calcDateByDaysAddition.js';
  * 
  * @example
  * calcWeeksOfRange( '20210501', '20210515' ) 
- * // returns [
- * //   [ '20210426', '20210502' ],
- * //   [ '20210503', '20210509' ],
- * //   [ '20210510', '20210516' ]
- * // ]
+ *      // returns [
+ *      //   [ '20210426', '20210502' ],
+ *      //   [ '20210503', '20210509' ],
+ *      //   [ '20210510', '20210516' ]
+ *      // ]
+ * calcWeeksOfRange( '20210501' ); // returns null 
  */
 
 const calcWeeksOfRange = ( from, till ) => {

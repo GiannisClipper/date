@@ -10,7 +10,7 @@ import { countDaysOfRange } from './countDaysOfRange.js';
  * 
  * @example
  * calcDayOfWeek( "20210507" ); // returns 5
- * calcDayOfWeek( "20210510" ); // returns 1
+ * calcDayOfWeek(); // returns null
  */
 
 const calcDayOfWeek = date => {

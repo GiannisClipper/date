@@ -9,8 +9,10 @@ import setDateStr from './setDateStr.js';
 * @returns { boolean } - True or false or null on invalid params
 * 
 * @example
-* opLessThanEqualTo( '20210101', '20210102' );  // returns true
-* opLessThanEqualTo( '20210101', '20210101' );  // returns true
+* opLessThanEqualTo( '01/01/2021', '02/01/2021' ); // returns true
+* opLessThanEqualTo( '02/01/2021', '02/01/2021' ); // returns true
+* opLessThanEqualTo( '03/01/2021', '02/01/2021' ); // returns false
+* opLessThanEqualTo(); // returns null
 */
 
 const opLessThanEqualTo = ( date1, date2 ) => {
