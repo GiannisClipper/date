@@ -1,8 +1,16 @@
 {
     "name": "@giannisclipper/date",
     "version": "1.0.0",
+    "description": "A collection of functions handling date values.",
     "type": "module",
+    "main": "./src/index.js",
     "devDependencies": {
         "jsdoc": "^3.6.6"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/giannisclipper/date.git"
+    },
+    "author": "Giannis Clipper",
+    "license": "MIT"
 }
