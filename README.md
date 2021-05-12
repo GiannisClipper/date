@@ -1,32 +1,34 @@
-A set of functions handling date values. 
-__(is a trial version, some things left to be done according documentation)__
+## A set of functions handling date values. ## 
+_(trial version, some things left to be done according documentation)_
 
-Date values could be expressed as:
+* ### Date values could be expressed as: ###
 
-_dateObj_: A simple object with integers in the form of { year, month, day }
+    * __dateObj__: A simple object with integers in the form of { year, month, day }
 
-_dateArr_: An array with integers in the form of [ yaer, month, day ]
+    * __dateArr__: An array with integers in the form of [ yaer, month, day ]
 
-_dateStr_: A string in the form of 'YYYYMMDD' (YYYY for the year, MM for the month, DD for the day)
+    * __dateStr__: A string in the form of 'YYYYMMDD' (YYYY for the year, MM for the month, DD for the day)
 
-_dateRepr_: A string in the form of 'DD/MM/YYYY' (as the default but flexible to customized to something else)  
+    * __dateRepr__: A string in the form of 'DD/MM/YYYY' (as the default but flexible to customized to something else)  
 
-_dateDate_: An instance of JS Date()
+    * __dateDate__: An instance of JS Date()
 
-_set*_ functions are used to create the supported date forms
+* ### Functions are grouped into: ###
 
-_get*_ functions are used to evaluate the supported date forms
+    * __set*()__ functions to create the supported date forms
 
-_op*_ functions are used to perform comparing operations between two date values (no matter the form is each of them)
+    * __get*()__ functions to evaluate the supported date forms
 
-_calc*_ functions are used to calculate new date related values based to given parameters
+    * __op*()__ functions to compare two date values, no matter the form of each of them)
 
-_count*_ functions are used to count date related values based to given parameters
+    * __calc*()__ functions to calculate new date related values based to given parameters
 
-_is*_ functions are user to validate date related values
+    * __count*()__ functions to count date related values based to given parameters
 
-_config.set*_ are used to customize general paramenters
+    * __is*()__ functions to validate date related values
 
-_config.get*_ are used to access genereal parameters
+    * __config.set*()__ methods to customize general paramenters
 
-More documentation here: https://giannisclipper.github.io/date/
+    * __config.get*()__ methods to retrieve genereal parameters
+
+_More documentation here: https://giannisclipper.github.io/date/_

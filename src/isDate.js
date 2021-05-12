@@ -3,8 +3,6 @@ import { isMonth } from './isMonth.js';
 import { isYear } from './isYear.js';
 import { countDaysOfMonth } from './countDaysOfMonth.js';
 
-/** @lends config */
-
 /**
  * Checks if a series of values expressing a date
  * 
