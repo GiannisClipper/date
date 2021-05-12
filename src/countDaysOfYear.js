@@ -2,15 +2,15 @@ import { isYear } from './isYear.js';
 import { isLeapYear } from './isLeapYear.js';
 
 /**
- * Returns the number of the days of a year
+ * Gets the number of days of a year
  * 
  * @example
  * countDaysOfYear( 2021 ); // returns 365
  * countDaysOfYear( 2024 ); // returns 366
  * 
- * @param { number } year - The year
+ * @param { number } year - A year
  * 
- * @returns { ( number | null ) } - The number of the days or null in case of invalid param
+ * @returns { ( number | null ) } - A number of days or null in case of invalid param
  */
 
 const countDaysOfYear = year => {

@@ -1,9 +1,9 @@
 import { isInteger } from './isInteger.js';
 
 /**
- * Checks if a value is an integer expressing a valid month (from 1 to 12)
+ * Validates if a value is an integer expressing a month (from 1 to 12)
  * 
- * @param { number } value - The value to be checked
+ * @param { number } value - A value to be validated
  * 
  * @returns { boolean } - True or false
  */

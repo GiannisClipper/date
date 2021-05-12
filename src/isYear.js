@@ -2,9 +2,9 @@ import { isInteger } from './isInteger.js';
 import { config } from './config.js';
 
 /**
- * Checks if a value is an integer expressing a valid year (by default from 1900 to 2099)
+ * Validates if a value is an integer expressing a year (by default from 1900 to 2099 but customizable to other values)
  * 
- * @param { number } value - The value to be checked
+ * @param { number } value - A value to be validates
  * 
  * @returns { boolean } - True or false
  */

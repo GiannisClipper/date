@@ -1,11 +1,11 @@
 import { isDate } from './isDate.js';
 
 /**
- * Extracts date values from an array ([ year, month, day ])
+ * Retrieves date values from an array ([ year, month, day ])
  * 
- * @param { Object[] } value - The array expressing a date
+ * @param { Object[] } value - An array expressing a date
  * 
- * @returns { ( Object | null ) } - An object expressing a date ({ year, month, day }) or null in case of invalid param
+ * @returns { ( Object | null ) } - An object with the date values ({ year:, month:, day: }) or null in case of invalid param
  * 
  * @example
  * getDateArr( [ 2021, 1, 1 ] ); // returns { year: 2021, month: 1, day: 1 }

@@ -46,7 +46,7 @@ import { isString } from './isString.js';
     /**
     * Gets the range of valid years
     * 
-    * @returns { Object[] } - An array with the starting and ending dates
+    * @returns { Object[] } - An array with starting and ending dates
     * 
     * @example
     * config.getYearRange(); // returns [ 1900, 2099 ]
@@ -64,7 +64,7 @@ import { isString } from './isString.js';
     /**
     * Sets the pattern for the date representation (by default DD/MM/YYYY)
     * 
-    * @param { string } pattern - The pattern
+    * @param { string } pattern - A pattern
     * 
     * @returns { boolean } - True on success or false on invalid param
     * 
@@ -93,7 +93,7 @@ import { isString } from './isString.js';
     /**
     * Gets the pattern for the date representation
     * 
-    * @returns { string } - The pattern
+    * @returns { string } - A pattern
     * 
     * @example
     * config.getReprPattern(); // returns 'DD/MM/YYYY'

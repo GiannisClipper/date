@@ -3,8 +3,8 @@ import setDateStr from './setDateStr.js';
 /**
 * Operates a comparison between two dates where the first should be greater than the second
 * 
-* @param { ( Object | string | Object[] | Date ) } date1 - The first date
-* @param { ( Object | string | Object[] | Date ) } date2 - The second date
+* @param { ( Object | Object[] | string | Date ) } date1 - The first date
+* @param { ( Object | Object[] | string | Date ) } date2 - The second date
 * 
 * @returns { boolean } - True or false or null on invalid params
 * 

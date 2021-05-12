@@ -5,7 +5,7 @@ import { setDateObj } from './setDateObj.js';
 /**
  * Creates a string expressing a date (in representation format)
  * 
- * @param { ( Object | string | Object[] | Date ) } value - The date
+ * @param { ( Object | Object[] | string | Date ) } value - A date value
  * @param { string } [ pattern ] - A representation pattern
  * 
  * @returns { ( string | null ) } - A string in representation format or null in case of invalid params

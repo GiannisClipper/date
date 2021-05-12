@@ -4,7 +4,7 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
 /**
  * Calculates the position of a date in the days sequence of the year (from 1 to 365/366)
  * 
- * @param { ( string | Object[] ) } value - The date
+ * @param { ( Object | Object[] | string | Date ) } date - A date value
  * 
  * @returns { ( number | null ) } - The position in year or null in case of invalid param
  * 
@@ -13,13 +13,13 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
  * calcDayOfYear( "20211231" ); // returns 365
  */
 
-const calcDayOfYear = value => {
+const calcDayOfYear = date => {
 
-    value = setDateObj( value );
+    date = setDateObj( date );
 
-    if ( value ) {
+    if ( date ) {
 
-        const { year, month, day } = value;
+        const { year, month, day } = date;
 
         let pos = day;
         for ( let i = 1; i < month; i++ ) {

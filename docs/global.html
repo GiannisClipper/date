@@ -112,7 +112,7 @@
 
 
 <div class="description">
-    Calculates the date given the day in the days sequence (from 1 to 365/366) of a year
+    Calculates the date according to a day in the sequence of a year (from 1 to 365/366)
 </div>
 
 
@@ -164,7 +164,7 @@
 
             
 
-            <td class="description last">The day</td>
+            <td class="description last">A day</td>
         </tr>
 
     
@@ -187,7 +187,7 @@
 
             
 
-            <td class="description last">The year</td>
+            <td class="description last">A year</td>
         </tr>
 
     
@@ -257,7 +257,7 @@
 
         
 <div class="param-desc">
-    - An object expressing a date ({ year, month, day }) or null in case of invalid params
+    - An object expressing a date ({ year:, month:, day: }) or null in case of invalid params
 </div>
 
 
@@ -302,7 +302,7 @@
 
 
 <div class="description">
-    Calculates the date given a starting date and a positive or negative number of days to be added
+    Calculates the date according to a starting date and a positive or negative number of days to be added
 </div>
 
 
@@ -344,10 +344,16 @@
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">Object</span>
 |
 
 <span class="param-type">Array.&lt;Object></span>
+|
+
+<span class="param-type">string</span>
+|
+
+<span class="param-type">Date</span>
 
 
             
@@ -357,7 +363,7 @@
 
             
 
-            <td class="description last">The starting date</td>
+            <td class="description last">A starting date</td>
         </tr>
 
     
@@ -380,7 +386,7 @@
 
             
 
-            <td class="description last">The number of days to be added</td>
+            <td class="description last">A number of days to be added</td>
         </tr>
 
     
@@ -487,7 +493,7 @@
     
 
     
-    <h4 class="name" id="calcDayOfWeek"><span class="type-signature"></span>calcDayOfWeek<span class="signature">(value)</span><span class="type-signature"> &rarr; {number|null}</span></h4>
+    <h4 class="name" id="calcDayOfWeek"><span class="type-signature"></span>calcDayOfWeek<span class="signature">(date)</span><span class="type-signature"> &rarr; {number|null}</span></h4>
     
 
     
@@ -495,7 +501,7 @@
 
 
 <div class="description">
-    Calculates the position of a date in the days sequence of the week (from 1: monday to 7: sunday)
+    Calculates the position of a date in the days sequence of the week (from 1 to 7, monday to sunday)
 </div>
 
 
@@ -531,16 +537,22 @@
 
         <tr>
             
-                <td class="name"><code>value</code></td>
+                <td class="name"><code>date</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">Object</span>
 |
 
 <span class="param-type">Array.&lt;Object></span>
+|
+
+<span class="param-type">string</span>
+|
+
+<span class="param-type">Date</span>
 
 
             
@@ -550,7 +562,7 @@
 
             
 
-            <td class="description last">The date</td>
+            <td class="description last">A date value</td>
         </tr>
 
     
@@ -657,7 +669,7 @@
     
 
     
-    <h4 class="name" id="calcDayOfYear"><span class="type-signature"></span>calcDayOfYear<span class="signature">(value)</span><span class="type-signature"> &rarr; {number|null}</span></h4>
+    <h4 class="name" id="calcDayOfYear"><span class="type-signature"></span>calcDayOfYear<span class="signature">(date)</span><span class="type-signature"> &rarr; {number|null}</span></h4>
     
 
     
@@ -701,16 +713,22 @@
 
         <tr>
             
-                <td class="name"><code>value</code></td>
+                <td class="name"><code>date</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">Object</span>
 |
 
 <span class="param-type">Array.&lt;Object></span>
+|
+
+<span class="param-type">string</span>
+|
+
+<span class="param-type">Date</span>
 
 
             
@@ -720,7 +738,7 @@
 
             
 
-            <td class="description last">The date</td>
+            <td class="description last">A date value</td>
         </tr>
 
     
@@ -835,7 +853,7 @@
 
 
 <div class="description">
-    Calculates the weeks within is placed a range of days
+    Calculates the weeks according to a range of days that are placed within
 </div>
 
 
@@ -880,10 +898,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -896,7 +914,7 @@
 
             
 
-            <td class="description last">The starting date of the range</td>
+            <td class="description last">A starting date of a range</td>
         </tr>
 
     
@@ -912,10 +930,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -928,7 +946,7 @@
 
             
 
-            <td class="description last">The ending date of the range</td>
+            <td class="description last">An ending date of a range</td>
         </tr>
 
     
@@ -1043,7 +1061,7 @@
 
 
 <div class="description">
-    Gets the number of the days of a month
+    Gets the number of days of a month
 </div>
 
 
@@ -1095,7 +1113,7 @@
 
             
 
-            <td class="description last">The month (from 1 to 12)</td>
+            <td class="description last">A month (from 1 to 12)</td>
         </tr>
 
     
@@ -1118,7 +1136,7 @@
 
             
 
-            <td class="description last">The year (considering 29 days of february on leap years)</td>
+            <td class="description last">A year (to consider 29 days for february on leap years)</td>
         </tr>
 
     
@@ -1188,7 +1206,7 @@
 
         
 <div class="param-desc">
-    - The number of the days or null in case of invalid params
+    - A number of days or null in case of invalid params
 </div>
 
 
@@ -1233,7 +1251,7 @@
 
 
 <div class="description">
-    Gets the number of the days of a date range including the starting and ending limits
+    Gets the number of days of a date range including the starting and ending limits
 </div>
 
 
@@ -1278,10 +1296,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -1294,7 +1312,7 @@
 
             
 
-            <td class="description last">The starting date of the range</td>
+            <td class="description last">A starting date of a range</td>
         </tr>
 
     
@@ -1310,10 +1328,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -1326,7 +1344,7 @@
 
             
 
-            <td class="description last">The ending date of the range</td>
+            <td class="description last">A ending date of a range</td>
         </tr>
 
     
@@ -1396,7 +1414,7 @@
 
         
 <div class="param-desc">
-    - The the number of the days or null in case of invalid params
+    - A number of days or null in case of invalid params
 </div>
 
 
@@ -1441,7 +1459,7 @@
 
 
 <div class="description">
-    Returns the number of the days of a year
+    Gets the number of days of a year
 </div>
 
 
@@ -1493,7 +1511,7 @@
 
             
 
-            <td class="description last">The year</td>
+            <td class="description last">A year</td>
         </tr>
 
     
@@ -1563,7 +1581,7 @@
 
         
 <div class="param-desc">
-    - The number of the days or null in case of invalid param
+    - A number of days or null in case of invalid param
 </div>
 
 
@@ -1608,7 +1626,7 @@
 
 
 <div class="description">
-    Extracts date values from an array ([ year, month, day ])
+    Retrieves date values from an array ([ year, month, day ])
 </div>
 
 
@@ -1660,7 +1678,7 @@
 
             
 
-            <td class="description last">The array expressing a date</td>
+            <td class="description last">An array expressing a date</td>
         </tr>
 
     
@@ -1730,7 +1748,7 @@
 
         
 <div class="param-desc">
-    - An object expressing a date ({ year, month, day }) or null in case of invalid param
+    - An object with the date values ({ year:, month:, day: }) or null in case of invalid param
 </div>
 
 
@@ -1775,7 +1793,7 @@
 
 
 <div class="description">
-    Extracts date values from a Date instance
+    Retrieves date values from a Date instance
 </div>
 
 
@@ -1827,7 +1845,7 @@
 
             
 
-            <td class="description last">The Date instance</td>
+            <td class="description last">A Date instance</td>
         </tr>
 
     
@@ -1897,7 +1915,7 @@
 
         
 <div class="param-desc">
-    - An object expressing a date ({ year, month, day }) or null in case of invalid param
+    - An object with the date values ({ year:, month:, day: }) or null in case of invalid param
 </div>
 
 
@@ -1942,7 +1960,7 @@
 
 
 <div class="description">
-    Extracts date values from an object ({ year, month, day })
+    Retrieves date values from an object ({ year:, month:, day: })
 </div>
 
 
@@ -1994,7 +2012,7 @@
 
             
 
-            <td class="description last">The object expressing a date</td>
+            <td class="description last">An object expressing a date</td>
         </tr>
 
     
@@ -2064,7 +2082,7 @@
 
         
 <div class="param-desc">
-    - An object expressing a date ({ year, month, day }) or null in case of invalid param
+    - An object with the date values ({ year:, month:, day: }) or null in case of invalid param
 </div>
 
 
@@ -2109,7 +2127,7 @@
 
 
 <div class="description">
-    Extracts date values from a string (in representation format)
+    Retrieves date values from a string (in representation format)
 </div>
 
 
@@ -2171,7 +2189,7 @@
 
             
 
-            <td class="description last">The string expressing a date</td>
+            <td class="description last">A string expressing a date</td>
         </tr>
 
     
@@ -2274,7 +2292,7 @@
 
         
 <div class="param-desc">
-    - An object expressing a date ({ year, month, day }) or null in case of invalid param
+    - An object with the date values ({ year:, month:, day: }) or null in case of invalid param
 </div>
 
 
@@ -2319,7 +2337,7 @@
 
 
 <div class="description">
-    Extracts date values from a string (in YYYYMMDD format)
+    Retrieves date values from a string (in YYYYMMDD format)
 </div>
 
 
@@ -2371,7 +2389,7 @@
 
             
 
-            <td class="description last">The string expressing a date</td>
+            <td class="description last">A string expressing a date</td>
         </tr>
 
     
@@ -2441,7 +2459,7 @@
 
         
 <div class="param-desc">
-    - An object expressing a date ({ year, month, day }) or null in case of invalid param
+    - An object with the date values ({ year:, month:, day: }) or null in case of invalid param
 </div>
 
 
@@ -2486,7 +2504,7 @@
 
 
 <div class="description">
-    Checks if a series of values expressing a date
+    Validates if a series of values expressing a date
 </div>
 
 
@@ -2538,7 +2556,7 @@
 
             
 
-            <td class="description last">The year (from 1900 to 2099 by default)</td>
+            <td class="description last">A year ( by default from 1900 to 2099 but customizable to other values)</td>
         </tr>
 
     
@@ -2561,7 +2579,7 @@
 
             
 
-            <td class="description last">The month (from 1 to 12)</td>
+            <td class="description last">A month (from 1 to 12)</td>
         </tr>
 
     
@@ -2584,7 +2602,7 @@
 
             
 
-            <td class="description last">The day (from 1 to 28/29/30/31)</td>
+            <td class="description last">A day (from 1 to 28/29/30/31)</td>
         </tr>
 
     
@@ -2625,7 +2643,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="isDate.js.html">isDate.js</a>, <a href="isDate.js.html#line22">line 22</a>
+        <a href="isDate.js.html">isDate.js</a>, <a href="isDate.js.html#line20">line 20</a>
     </li></ul></dd>
     
 
@@ -2855,7 +2873,7 @@
 
 
 <div class="description">
-    Checks if a value is an integer expressing a leap year
+    Validates if a value is an integer expressing a leap year
 </div>
 
 
@@ -2907,7 +2925,7 @@
 
             
 
-            <td class="description last">The value to be checked</td>
+            <td class="description last">A value to be validated</td>
         </tr>
 
     
@@ -3019,7 +3037,7 @@
 
 
 <div class="description">
-    Checks if a value is an integer expressing a valid month (from 1 to 12)
+    Validates if a value is an integer expressing a month (from 1 to 12)
 </div>
 
 
@@ -3071,7 +3089,7 @@
 
             
 
-            <td class="description last">The value to be checked</td>
+            <td class="description last">A value to be validated</td>
         </tr>
 
     
@@ -3337,7 +3355,7 @@
 
 
 <div class="description">
-    Checks if a value is an integer expressing a valid year (by default from 1900 to 2099)
+    Validates if a value is an integer expressing a year (by default from 1900 to 2099 but customizable to other values)
 </div>
 
 
@@ -3389,7 +3407,7 @@
 
             
 
-            <td class="description last">The value to be checked</td>
+            <td class="description last">A value to be validates</td>
         </tr>
 
     
@@ -3541,10 +3559,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -3573,10 +3591,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -3746,10 +3764,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -3778,10 +3796,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -3951,10 +3969,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -3983,10 +4001,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -4156,10 +4174,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -4188,10 +4206,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -4361,10 +4379,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -4393,10 +4411,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -4566,10 +4584,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -4598,10 +4616,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -4771,10 +4789,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -4787,7 +4805,7 @@
 
             
 
-            <td class="description last">The date</td>
+            <td class="description last">A date value</td>
         </tr>
 
     
@@ -4942,10 +4960,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -4958,7 +4976,7 @@
 
             
 
-            <td class="description last">The date</td>
+            <td class="description last">A date value</td>
         </tr>
 
     
@@ -5028,7 +5046,7 @@
 
         
 <div class="param-desc">
-    - An Date instance or null in case of invalid param
+    - An instance of Date() or null in case of invalid param
 </div>
 
 
@@ -5060,7 +5078,7 @@
     
 
     
-    <h4 class="name" id="setDateObj"><span class="type-signature"></span>setDateObj<span class="signature">(value)</span><span class="type-signature"> &rarr; {Array.&lt;Object>|null}</span></h4>
+    <h4 class="name" id="setDateObj"><span class="type-signature"></span>setDateObj<span class="signature">(value)</span><span class="type-signature"> &rarr; {Object|null}</span></h4>
     
 
     
@@ -5068,7 +5086,7 @@
 
 
 <div class="description">
-    Creates an object expressing a date ({ year, month, day })
+    Creates an object expressing a date ({ year:, month:, day: })
 </div>
 
 
@@ -5113,10 +5131,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -5129,7 +5147,7 @@
 
             
 
-            <td class="description last">The date</td>
+            <td class="description last">A date value</td>
         </tr>
 
     
@@ -5199,7 +5217,7 @@
 
         
 <div class="param-desc">
-    - An object ({ year, month, day }) or null in case of invalid param
+    - An object ({ year:, month:, day: }) or null in case of invalid param
 </div>
 
 
@@ -5210,7 +5228,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">Object</span>
 |
 
 <span class="param-type">null</span>
@@ -5286,10 +5304,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -5310,7 +5328,7 @@
 
             
 
-            <td class="description last">The date</td>
+            <td class="description last">A date value</td>
         </tr>
 
     
@@ -5498,10 +5516,10 @@
 <span class="param-type">Object</span>
 |
 
-<span class="param-type">string</span>
+<span class="param-type">Array.&lt;Object></span>
 |
 
-<span class="param-type">Array.&lt;Object></span>
+<span class="param-type">string</span>
 |
 
 <span class="param-type">Date</span>
@@ -5514,7 +5532,7 @@
 
             
 
-            <td class="description last">The date</td>
+            <td class="description last">A date value</td>
         </tr>
 
     
@@ -5632,7 +5650,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Wed May 12 2021 19:28:02 GMT+0300 (Θερινή ώρα Ανατολικής Ευρώπης)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Wed May 12 2021 21:50:13 GMT+0300 (Θερινή ώρα Ανατολικής Ευρώπης)
 </footer>
 
 <script> prettyPrint(); </script>

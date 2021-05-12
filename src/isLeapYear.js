@@ -1,9 +1,9 @@
 import { isInteger } from './isInteger.js';
 
 /**
- * Checks if a value is an integer expressing a leap year
+ * Validates if a value is an integer expressing a leap year
  * 
- * @param { number } value - The value to be checked
+ * @param { number } value - A value to be validated
  * 
  * @returns { boolean } - True or false
  * 

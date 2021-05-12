@@ -6,10 +6,10 @@ import { calcDateByDayOfYear } from './calcDateByDayOfYear.js';
 import isYear from './isYear.js';
 
 /**
- * Calculates the date given a starting date and a positive or negative number of days to be added
+ * Calculates the date according to a starting date and a positive or negative number of days to be added
  * 
- * @param { ( string | Object[] ) } from - The starting date
- * @param { number } days - The number of days to be added
+ * @param { ( Object | Object[] | string | Date ) } from - A starting date
+ * @param { number } days - A number of days to be added
  * 
  * @returns { ( Object[] | null ) } - An array expressing a date ([ year, month, day ]) or null in case of invalid params
  * 

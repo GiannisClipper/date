@@ -4,12 +4,12 @@ import { countDaysOfYear } from './countDaysOfYear.js';
 import { countDaysOfMonth } from './countDaysOfMonth.js';
 
 /**
- * Calculates the date given the day in the days sequence (from 1 to 365/366) of a year
+ * Calculates the date according to a day in the sequence of a year (from 1 to 365/366)
  * 
- * @param { number } day - The day
- * @param { number } year - The year
+ * @param { number } day - A day
+ * @param { number } year - A year
  * 
- * @returns { ( Object | null ) } - An object expressing a date ({ year, month, day }) or null in case of invalid params
+ * @returns { ( Object | null ) } - An object expressing a date ({ year:, month:, day: }) or null in case of invalid params
  * 
  * @example
  * calcDateByDayOfYear( 32, 2021 ); // returns { day: 1, month: 2, year: 2021 }

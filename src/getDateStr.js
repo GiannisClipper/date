@@ -2,11 +2,11 @@ import { isString } from './isString.js';
 import { isDate } from './isDate.js';
 
 /**
- * Extracts date values from a string (in YYYYMMDD format)
+ * Retrieves date values from a string (in YYYYMMDD format)
  * 
- * @param { string } value - The string expressing a date
+ * @param { string } value - A string expressing a date
  * 
- * @returns { ( Object | null ) } - An object expressing a date ({ year, month, day }) or null in case of invalid param
+ * @returns { ( Object | null ) } - An object with the date values ({ year:, month:, day: }) or null in case of invalid param
  * 
  * @example
  * getDateStr( '20210101' ); // returns { day: 1, month: 1, year: 2021 }

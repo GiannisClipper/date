@@ -4,12 +4,12 @@ import { countDaysOfYear } from './countDaysOfYear.js';
 import { calcDayOfYear } from './calcDayOfYear.js';
 
 /**
- * Gets the number of the days of a date range including the starting and ending limits
+ * Gets the number of days of a date range including the starting and ending limits
  * 
- * @param { ( Object | string | Object[] | Date ) } from - The starting date of the range
- * @param { ( Object | string | Object[] | Date ) } till - The ending date of the range
+ * @param { ( Object | Object[] | string | Date ) } from - A starting date of a range
+ * @param { ( Object | Object[] | string | Date ) } till - A ending date of a range
  * 
- * @returns { ( number | null ) } - The the number of the days or null in case of invalid params
+ * @returns { ( number | null ) } - A number of days or null in case of invalid params
  * 
  * @example
  * countDaysOfRange( '20210429', '20210502' ) // returns 4

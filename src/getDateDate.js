@@ -1,11 +1,11 @@
 import { isDate } from './isDate.js';
 
 /**
- * Extracts date values from a Date instance
+ * Retrieves date values from a Date instance
  * 
- * @param { Date } value - The Date instance
+ * @param { Date } value - A Date instance
  * 
- * @returns { ( Object | null ) } - An object expressing a date ({ year, month, day }) or null in case of invalid param
+ * @returns { ( Object | null ) } - An object with the date values ({ year:, month:, day: }) or null in case of invalid param
  * 
  * @example
  * getDateDate( new Date( 2021, 0, 1 ) ); // returns { day: 1, month: 1, year: 2021 }
