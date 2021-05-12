@@ -9,7 +9,7 @@ import { calcDateByDaysAddition } from './calcDateByDaysAddition.js';
  * @param { ( Object | string | Object[] | Date ) } from - The starting date of the range
  * @param { ( Object | string | Object[] | Date ) } till - The ending date of the range
  * 
- * @returns { ( Object[] | null ) } - An array with the weeks or null in case of invalid params
+ * @returns { ( Object[] | null ) } - A 2-dimensional array with the starting & ending dates of each week or null in case of invalid params
  * 
  * @example
  * calcWeeksOfRange( '20210501', '20210515' ) 

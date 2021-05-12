@@ -1,1 +1,2 @@
-A collection of functions to manage date values.
+A collection of functions handling date values.
+
