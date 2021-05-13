@@ -4,9 +4,9 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
 /**
  * Calculates the position of a date in the days sequence of the year (from 1 to 365/366).
  * 
- * @param { ( Object | Object[] | string | Date ) } date - A date value
+ * @param { ( Object | Object[] | string | Date ) } date A date value
  * 
- * @returns { ( number | null ) } - The position in year or null in case of invalid param
+ * @returns { ( number | null ) } The position in year or null in case of invalid param
  * 
  * @example
  * calcDayOfYear( "20210201" ); // returns 32

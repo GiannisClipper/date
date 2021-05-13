@@ -8,10 +8,10 @@ import isYear from './isYear.js';
 /**
  * Calculates the date according to a starting date and a positive or negative number of days to be added.
  * 
- * @param { ( Object | Object[] | string | Date ) } from - A starting date
- * @param { number } days - A number of days to be added
+ * @param { ( Object | Object[] | string | Date ) } from A starting date
+ * @param { number } days A number of days to be added
  * 
- * @returns { ( Object[] | null ) } - An array expressing a date ([ year, month, day ]) or null in case of invalid params
+ * @returns { ( Object[] | null ) } An array expressing a date ([ year, month, day ]) or null in case of invalid params
  * 
  * @example
  * calcDateByDaysAddition( "20210110", 10 ); // returns [ 2021, 1, 20 ]

@@ -3,10 +3,10 @@ import setDateStr from './setDateStr.js';
 /**
 * Operates a comparison between two dates where the one should not be equal to the other.
 * 
-* @param { ( Object | Object[] | string | Date ) } date1 - The first date
-* @param { ( Object | Object[] | string | Date ) } date2 - The second date
+* @param { ( Object | Object[] | string | Date ) } date1 The first date
+* @param { ( Object | Object[] | string | Date ) } date2 The second date
 * 
-* @returns { boolean } - True or false or null on invalid params
+* @returns { boolean } True or false or null on invalid params
 * 
 * @example
 * opNotEqualTo( '01/01/2021', '02/01/2021' ); // returns true

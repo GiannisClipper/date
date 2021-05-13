@@ -3,9 +3,9 @@ import { setDateObj } from './setDateObj.js';
 /**
  * Creates a Date instance.
  * 
- * @param { ( Object | Object[] | string | Date ) } value - A date value
+ * @param { ( Object | Object[] | string | Date ) } value A date value
  * 
- * @returns { ( Date | null ) } - An instance of Date() or null in case of invalid param
+ * @returns { ( Date | null ) } An instance of Date() or null in case of invalid param
  * 
  * @example
  * setDateDate( { year: 2021, month: 1, day: 31 } ); // returns new Date( 2021, 0, 31 )

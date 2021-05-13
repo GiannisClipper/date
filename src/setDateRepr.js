@@ -6,9 +6,9 @@ import { setDateObj } from './setDateObj.js';
  * Creates a string expressing a date (in representation format).
  * 
  * @param { ( Object | Object[] | string | Date ) } value - A date value
- * @param { string } [ pattern ] - A representation pattern
+ * @param { string } [ pattern ] A representation pattern
  * 
- * @returns { ( string | null ) } - A string in representation format or null in case of invalid params
+ * @returns { ( string | null ) } A string in representation format or null in case of invalid params
  * 
  * @example
  * setDateRepr( { year: 2021, month: 1, day: 31 } ); // returns '31/12/2021'

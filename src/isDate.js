@@ -6,11 +6,11 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
 /**
  * Validates if a series of values expressing a date.
  * 
- * @param { number } year - A year ( by default from 1900 to 2099 but customizable to other values)
- * @param { number } month - A month (from 1 to 12)
- * @param { number } day - A day (from 1 to 28/29/30/31)
+ * @param { number } year A year ( by default from 1900 to 2099 but customizable to other values)
+ * @param { number } month A month (from 1 to 12)
+ * @param { number } day A day (from 1 to 28/29/30/31)
  * 
- * @returns { boolean } - True or false
+ * @returns { boolean } True or false
  * 
  * @example
  * isDate( 2021, 1, 31 ); // returns true

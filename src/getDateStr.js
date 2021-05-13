@@ -4,9 +4,9 @@ import { isDate } from './isDate.js';
 /**
  * Retrieves date values from a string (in YYYYMMDD format).
  * 
- * @param { string } value - A string expressing a date
+ * @param { string } value A string expressing a date
  * 
- * @returns { ( Object | null ) } - An object with the date values ({ year:, month:, day: }) or null in case of invalid param
+ * @returns { ( Object | null ) } An object with the date values ({ year:, month:, day: }) or null in case of invalid param
  * 
  * @example
  * getDateStr( '20210131' ); // returns { year: 2021, month: 1, day: 31 }

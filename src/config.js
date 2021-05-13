@@ -6,10 +6,10 @@ const config = {
     /**
     * Sets the range of valid years (by default from 1900 to 2099).
     * 
-    * @param { number } from - The starting year
-    * @param { number } till - The ending year
+    * @param { number } from The starting year
+    * @param { number } till The ending year
     * 
-    * @returns { boolean } - True on success or false on invalid params
+    * @returns { boolean } True on success or false on invalid params
     * 
     * @example
     * config.setYearRange( 1850, 2149 ); // returns true
@@ -41,7 +41,7 @@ const config = {
     /**
     * Gets the range of valid years.
     * 
-    * @returns { Object[] } - An array with starting and ending dates
+    * @returns { Object[] } An array with starting and ending dates
     * 
     * @example
     * config.getYearRange(); // returns [ 1900, 2099 ]
@@ -62,9 +62,9 @@ const config = {
     /**
     * Sets the pattern for the date representation (by default DD/MM/YYYY).
     * 
-    * @param { string } pattern - A pattern consisted of separators and series of letters 'D', 'M', 'Y' (or 'd', 'm', 'y') expressing day, month, year. Using capitals the width of the date remains fixed (ex. 01/01/2021) but using small letters becomes flexible (ex. 1/1/2021).
+    * @param { string } pattern A pattern consisted of separators and series of letters 'D', 'M', 'Y' (or 'd', 'm', 'y') expressing day, month, year. Using capitals the width of the date remains fixed (ex. DD/MM/YYYY for 01/01/2021) but using small letters becomes flexible (ex. dd/mm/yyyy for 1/1/2021).
     * 
-    * @returns { boolean } - True on success or false on invalid param
+    * @returns { boolean } True on success or false on invalid param
     * 
     * @example
     * config.setReprPattern( 'DD-MM-YY' ); // returns true
@@ -94,7 +94,7 @@ const config = {
     /**
     * Gets the pattern for the date representation.
     * 
-    * @returns { string } - A pattern
+    * @returns { string } A pattern
     * 
     * @example
     * config.getReprPattern(); // returns 'DD/MM/YYYY'

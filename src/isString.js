@@ -4,9 +4,9 @@
  * @function
  * @package
  * 
- * @param { number } value - The value to be validated
+ * @param { number } value The value to be validated
  * 
- * @returns { boolean } - True or false 
+ * @returns { boolean } True or false 
  */
 
  const isString = value => {

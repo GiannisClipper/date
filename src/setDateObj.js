@@ -7,9 +7,9 @@ import { getDateDate } from './getDateDate.js';
 /**
  * Creates an object expressing a date ({ year:, month:, day: }).
  * 
- * @param { ( Object | Object[] | string | Date ) } value - A date value
+ * @param { ( Object | Object[] | string | Date ) } value A date value
  * 
- * @returns { ( Object | null ) } - An object ({ year:, month:, day: }) or null in case of invalid param
+ * @returns { ( Object | null ) } An object ({ year:, month:, day: }) or null in case of invalid param
  * 
  * @example
  * setDateObj( { year: 2021, month: 1, day: 31 } ); // returns { year: 2021, month: 1, day: 31 }

@@ -4,9 +4,9 @@ import { isLeapYear } from './isLeapYear.js';
 /**
  * Gets the number of days of a year.
  * 
- * @param { number } year - A year
+ * @param { number } year A year
  * 
- * @returns { ( number | null ) } - A number of days or null in case of invalid param
+ * @returns { ( number | null ) } A number of days or null in case of invalid param
  * 
  * @example
  * countDaysOfYear( 2021 ); // returns 365

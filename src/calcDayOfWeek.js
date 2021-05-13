@@ -4,9 +4,9 @@ import { countDaysOfRange } from './countDaysOfRange.js';
 /**
  * Calculates the position of a date in the days sequence of the week (from 1 to 7, monday to sunday).
  * 
- * @param { ( Object | Object[] | string | Date ) } date - A date value
+ * @param { ( Object | Object[] | string | Date ) } date A date value
  * 
- * @returns { ( number | null ) } - The position in week or null in case of invalid param
+ * @returns { ( number | null ) } The position in week or null in case of invalid param
  * 
  * @example
  * calcDayOfWeek( "20210507" ); // returns 5

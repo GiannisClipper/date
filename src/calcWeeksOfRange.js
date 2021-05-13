@@ -6,10 +6,10 @@ import { calcDateByDaysAddition } from './calcDateByDaysAddition.js';
 /**
  * Calculates the weeks according to a range of days that are placed within.
  * 
- * @param { ( Object | Object[] | string | Date ) } from - A starting date of a range
- * @param { ( Object | Object[] | string | Date ) } till - An ending date of a range
+ * @param { ( Object | Object[] | string | Date ) } from A starting date of a range
+ * @param { ( Object | Object[] | string | Date ) } till An ending date of a range
  * 
- * @returns { ( Object[] | null ) } - A 2-dimensional array with the starting & ending dates of each week or null in case of invalid params
+ * @returns { ( Object[] | null ) } A 2-dimensional array with the starting & ending dates of each week or null in case of invalid params
  * 
  * @example
  * calcWeeksOfRange( '20210501', '20210515' ) 
