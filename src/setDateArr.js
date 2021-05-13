@@ -1,4 +1,3 @@
-import { isString } from './isString.js';
 import { setDateObj } from './setDateObj.js';
 
 /**
@@ -15,6 +14,9 @@ import { setDateObj } from './setDateObj.js';
  * setDateArr( '31/01/2021' ); // returns [ 2021, 1, 31 ]
  * setDateArr( new Date( 2021, 0, 31 ) ); // returns [ 2021, 1, 31 ]
  * setDateArr(); // returns null
+ * 
+ * - - -
+ * @memberof A.set
  */
 
 const setDateArr = value => {

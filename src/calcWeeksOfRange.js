@@ -19,6 +19,9 @@ import { calcDateByDaysAddition } from './calcDateByDaysAddition.js';
  *      //   [ '20210510', '20210516' ]
  *      // ]
  * calcWeeksOfRange( '20210501' ); // returns null 
+ * 
+ * - - -
+ * @memberof D.calc
  */
 
 const calcWeeksOfRange = ( from, till ) => {

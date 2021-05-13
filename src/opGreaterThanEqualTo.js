@@ -13,6 +13,9 @@ import setDateStr from './setDateStr.js';
 * opGreaterThanEqualTo( '02/01/2021', '02/01/2021' ); // returns true
 * opGreaterThanEqualTo( '03/01/2021', '02/01/2021' ); // returns true
 * opGreaterThanEqualTo(); // returns null
+* 
+* - - -
+* @memberof C.op
 */
 
 const opGreaterThanEqualTo = ( date1, date2 ) => {

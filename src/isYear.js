@@ -11,6 +11,9 @@ import { config } from './config.js';
  * @example
  * isYear( 2021 ); // returns true
  * isYear( '2021' ); // return false
+ * 
+ * - - -
+ * @memberof F.is
  */
 
 const isYear = value => {

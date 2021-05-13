@@ -12,6 +12,9 @@ import { isLeapYear } from './isLeapYear.js';
  * countDaysOfYear( 2021 ); // returns 365
  * countDaysOfYear( 2024 ); // returns 366
  * countDaysOfYear(); // returns null
+ * 
+ * - - -
+ * @memberof E.count
  */
 
 const countDaysOfYear = year => {

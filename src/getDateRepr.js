@@ -13,6 +13,9 @@ import { isDate } from './isDate.js';
  * @example
  * getDateRepr( '31/01/2021' ); // returns { year: 2021, month: 1, day: 31 }
  * getDateRepr( '20210131' ); // returns null
+ * 
+ * - - -
+ * @memberof B.get
  */
 
 const getDateRepr = ( value, pattern ) => {

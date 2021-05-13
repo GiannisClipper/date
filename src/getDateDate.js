@@ -10,6 +10,9 @@ import { isDate } from './isDate.js';
  * @example
  * getDateDate( new Date( 2021, 0, 31 ) ); // returns { year: 2021, month: 1, day: 31 }
  * getDateDate( new Date( 'bla.. bla..' ); // returns null
+ * 
+ * - - -
+ * @memberof B.get
  */
 
 const getDateDate = value => {

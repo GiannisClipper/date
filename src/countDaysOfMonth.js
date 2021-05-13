@@ -14,6 +14,9 @@ import { isLeapYear } from './isLeapYear.js';
  * countDaysOfMonth( 1, 2021 ); // returns 31
  * countDaysOfMonth( 2, 2021 ); // returns 28
  * countDaysOfMonth( 2 ); // returns null
+ * 
+ * - - -
+ * @memberof E.count
  */
 
 const countDaysOfMonth = ( month, year ) => {

@@ -11,6 +11,9 @@ import { countDaysOfRange } from './countDaysOfRange.js';
  * @example
  * calcDayOfWeek( "20210507" ); // returns 5
  * calcDayOfWeek(); // returns null
+ * 
+ * - - -
+ * @memberof D.calc
  */
 
 const calcDayOfWeek = date => {

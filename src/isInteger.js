@@ -1,6 +1,9 @@
 /**
  * Validates if a value is an integer
  * 
+ * @function
+ * @package
+ *
  * @param { number } value - The value to be validated
  * 
  * @returns { boolean } - True or false

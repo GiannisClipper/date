@@ -14,6 +14,9 @@ import { calcDayOfYear } from './calcDayOfYear.js';
  * @example
  * countDaysOfRange( '20210429', '20210502' ) // returns 4
  * countDaysOfRange( '20210502', '20210429' ) // returns -4
+ * 
+ * - - -
+ * @memberof E.count
  */
 
 const countDaysOfRange = ( from, till ) => {

@@ -10,6 +10,9 @@ import { isInteger } from './isInteger.js';
  * @example
  * isLeapYear( 2020 ); // returns true
  * isLeapYear( 2021 ); // return false
+ * 
+ * - - -
+ * @memberof F.is
  */
 
 const isLeapYear = ( value, from, till ) => {

@@ -13,6 +13,9 @@ import setDateStr from './setDateStr.js';
 * opLessThanEqualTo( '02/01/2021', '02/01/2021' ); // returns true
 * opLessThanEqualTo( '03/01/2021', '02/01/2021' ); // returns false
 * opLessThanEqualTo(); // returns null
+* 
+* - - -
+* @memberof C.op
 */
 
 const opLessThanEqualTo = ( date1, date2 ) => {

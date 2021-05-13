@@ -10,6 +10,9 @@ import { isInteger } from './isInteger.js';
  * @example
  * isMonth( 12 ); // returns true
  * isMonth( 'December'); // returns false
+ * 
+ * - - -
+ * @memberof F.is
  */
 
 const isMonth = value => {

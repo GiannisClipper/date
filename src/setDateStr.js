@@ -14,6 +14,9 @@ import { setDateObj } from './setDateObj.js';
  * setDateStr( '31/01/2021' ); // returns '20210131'
  * setDateStr( new Date( 2021, 0, 31 ) ); // returns '20210131'
  * setDateStr(); // returns null
+ * 
+ * - - -
+ * @memberof A.set
  */
 
 const setDateStr = value => {

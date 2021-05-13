@@ -12,7 +12,10 @@ import setDateStr from './setDateStr.js';
 * opNotEqualTo( '01/01/2021', '02/01/2021' ); // returns true
 * opNotEqualTo( '02/01/2021', '02/01/2021' ); // returns false
 * opNotEqualTo( '03/01/2021', '02/01/2021' ); // returns true
-* opNotEqualTo(); // returns null
+* opNotEqualTo(); // returns null 
+* 
+* - - -
+* @memberof C.op
 */
 
 const opNotEqualTo = ( date1, date2 ) => {

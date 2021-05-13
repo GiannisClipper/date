@@ -12,6 +12,9 @@ import { countDaysOfMonth } from './countDaysOfMonth.js';
  * calcDayOfYear( "20210201" ); // returns 32
  * calcDayOfYear( "20211231" ); // returns 365
  * calcDayOfYear(); // returns null
+ * 
+ * - - -
+ * @memberof D.calc
  */
 
 const calcDayOfYear = date => {

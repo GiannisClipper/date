@@ -1,29 +1,29 @@
-## A set of functions handling dates in various value forms ## 
-_(trial version, some things left to be done according to documentation)_
+## A set of functions to handle date values in various shapes ## 
+_(version 1.0.0)_
 
 * ### Functions are grouped into: ###
 
-    * __set*()__, to create various value forms expressing a date:
+    * __set*()__, to create various value shapes expressing a date:
 
         * __setDateObj( value )__, a simple object with integer values ({ year:, month:, day: })
 
         * __setDateArray( value )__, an array of integers ([ yaer, month, day ])
 
-        * __setDateStr( value )__, a string (in form of 'YYYYMMDD' where YYYY for year, MM for month, DD for day)
+        * __setDateStr( value )__, a string in form of 'YYYYMMDD' (where YYYY is for year, MM for month, DD for day)
 
-        * __setDateRepr( value, pattern )__ a representation string (like 'DD/MM/YYYY' by default but customizable to other patterns)
+        * __setDateRepr( value, pattern )__ a representation string in form of 'DD/MM/YYYY' (by default but also customizable to other patterns)
 
         * __setDateDate( value )__ an instance of JS Date class
 
-    * __get*()__, to evaluate and retrieve the date values from the above forms:
+    * __get*()__, to evaluate and retrieve the date values from the above shapes:
 
         * __getDateObj( value )__, date values from an object ({ year:, month:, day: })
 
         * __getDateArray( value )__, date values from an array of integers ([ yaer, month, day ])
 
-        * __getDateStr( value )__, date values from a string (in form of 'YYYYMMDD')
+        * __getDateStr( value )__, date values from a string in form of 'YYYYMMDD'
 
-        * __getDateRepr( value, pattern )__, date values from a representation string (like 'DD/MM/YYYY')
+        * __getDateRepr( value, pattern )__, date values from a representation string like 'DD/MM/YYYY'
 
         * __getDateDate( value )__, date values from an instance of JS Date class
 
@@ -31,7 +31,7 @@ _(trial version, some things left to be done according to documentation)_
 
         * __opEqualTo( date1, date2 )__, the one date should be equal to the other
 
-        * __opNotEqualTo( date1, date2 )__, the one date should be not equal to the other
+        * __opNotEqualTo( date1, date2 )__, the one date should not be equal to the other
 
         * __opGreaterThan( date1, date2 )__, the first date should be greater than the second
 
@@ -41,7 +41,7 @@ _(trial version, some things left to be done according to documentation)_
 
         * __opLessThanEqualTo( date1, date2 )__, the first date should be less than or equal to the second
 
-    * __calc*()__, to calculate new dates or related values:
+    * __calc*()__, to calculate new date or related values:
 
         * __calcDayOfWeek( date )__, the position of a date in the days sequence of the week (from 1 to 7, monday to sunday)
 
@@ -63,7 +63,7 @@ _(trial version, some things left to be done according to documentation)_
 
     * __is*()__, to validate date related values:
 
-        * __isYear( value )__, if a value is an integer expressing a year (by default from 1900 to 2099 but customizable to other values)
+        * __isYear( value )__, if a value is an integer expressing a year (by default from 1900 to 2099 but also customizable to other values)
 
         * __isLeapYear( value )__, if a value is an integer expressing a leap year
 
@@ -84,4 +84,6 @@ _(trial version, some things left to be done according to documentation)_
         * __config.getReprPattern()__, the pattern for the date representation
 
 
-_Further documentation can be found [here](https://giannisclipper.github.io/date/)_
+_Repository [here](https://github.com/giannisclipper/date)_
+
+_Documentation [here](https://giannisclipper.github.io/date/)_

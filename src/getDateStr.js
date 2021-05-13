@@ -11,6 +11,9 @@ import { isDate } from './isDate.js';
  * @example
  * getDateStr( '20210131' ); // returns { year: 2021, month: 1, day: 31 }
  * getDateStr( '2021' ); // returns null
+ * 
+ * - - -
+ * @memberof B.get
  */
 
 const getDateStr = value => {

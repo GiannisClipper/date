@@ -42,6 +42,156 @@
 
 
 
+    <section>
+        <article><h2>A set of functions to handle date values in various shapes</h2>
+<p><em>(version 1.0.0)</em></p>
+<ul>
+<li>
+<h3>Functions are grouped into:</h3>
+<ul>
+<li>
+<p><strong>set*()</strong>, to create various value shapes expressing a date:</p>
+<ul>
+<li>
+<p><strong>setDateObj( value )</strong>, a simple object with integer values ({ year:, month:, day: })</p>
+</li>
+<li>
+<p><strong>setDateArray( value )</strong>, an array of integers ([ yaer, month, day ])</p>
+</li>
+<li>
+<p><strong>setDateStr( value )</strong>, a string in form of 'YYYYMMDD' (where YYYY is for year, MM for month, DD for day)</p>
+</li>
+<li>
+<p><strong>setDateRepr( value, pattern )</strong> a representation string in form of 'DD/MM/YYYY' (by default but also customizable to other patterns)</p>
+</li>
+<li>
+<p><strong>setDateDate( value )</strong> an instance of JS Date class</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>get*()</strong>, to evaluate and retrieve the date values from the above shapes:</p>
+<ul>
+<li>
+<p><strong>getDateObj( value )</strong>, date values from an object ({ year:, month:, day: })</p>
+</li>
+<li>
+<p><strong>getDateArray( value )</strong>, date values from an array of integers ([ yaer, month, day ])</p>
+</li>
+<li>
+<p><strong>getDateStr( value )</strong>, date values from a string in form of 'YYYYMMDD'</p>
+</li>
+<li>
+<p><strong>getDateRepr( value, pattern )</strong>, date values from a representation string like 'DD/MM/YYYY'</p>
+</li>
+<li>
+<p><strong>getDateDate( value )</strong>, date values from an instance of JS Date class</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>op*()</strong>, to compare two date values:</p>
+<ul>
+<li>
+<p><strong>opEqualTo( date1, date2 )</strong>, the one date should be equal to the other</p>
+</li>
+<li>
+<p><strong>opNotEqualTo( date1, date2 )</strong>, the one date should not be equal to the other</p>
+</li>
+<li>
+<p><strong>opGreaterThan( date1, date2 )</strong>, the first date should be greater than the second</p>
+</li>
+<li>
+<p><strong>opGreaterThanEqualTo( date1, date2 )</strong>, the first date should be greater than or equal to the second</p>
+</li>
+<li>
+<p><strong>opLessThan( date1, date2 )</strong>, the first date should be less than the second</p>
+</li>
+<li>
+<p><strong>opLessThanEqualTo( date1, date2 )</strong>, the first date should be less than or equal to the second</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>calc*()</strong>, to calculate new date or related values:</p>
+<ul>
+<li>
+<p><strong>calcDayOfWeek( date )</strong>, the position of a date in the days sequence of the week (from 1 to 7, monday to sunday)</p>
+</li>
+<li>
+<p><strong>calcDayOfYear( date )</strong>, the position of a date in the days sequence of the year (from 1 to 365/366)</p>
+</li>
+<li>
+<p><strong>calcDateByDayOfYear( day, year )</strong>, the date according to a day in the sequence of a year (from 1 to 365/366)</p>
+</li>
+<li>
+<p><strong>calcDateByDaysAddition( from, days )</strong>, the date according to a starting date and a positive or negative number of days to be added</p>
+</li>
+<li>
+<p><strong>calcWeeksOfRange( from, till )</strong>, the weeks according to a range of days that are placed within</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>count*()</strong>, to count date related values</p>
+<ul>
+<li>
+<p><strong>countDaysOfMonth( month, year )</strong>, the number of days of a month</p>
+</li>
+<li>
+<p><strong>countDaysOfYear( year )</strong>, the number of days of a year</p>
+</li>
+<li>
+<p><strong>countDaysOfRange( from, till )</strong>, the number of days of a date range including the starting and ending limits</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>is*()</strong>, to validate date related values:</p>
+<ul>
+<li>
+<p><strong>isYear( value )</strong>, if a value is an integer expressing a year (by default from 1900 to 2099 but also customizable to other values)</p>
+</li>
+<li>
+<p><strong>isLeapYear( value )</strong>, if a value is an integer expressing a leap year</p>
+</li>
+<li>
+<p><strong>isMonth( month, year )</strong>, if a value is an integer expressing a month (from 1 to 12)</p>
+</li>
+<li>
+<p><strong>isDate( year, month, day )</strong>, if a series of values expressing a date</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>config.set*()</strong>, to customize general parameters:</p>
+<ul>
+<li>
+<p><strong>config.setYearRange( from, till )</strong>, the range of valid years (by default from 1900 to 2099)</p>
+</li>
+<li>
+<p><strong>config.setReprPattern( pattern )</strong>, the pattern for the date representation (by default DD/MM/YYYY)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>config.get*()</strong>, to retrieve general parameters:</p>
+<ul>
+<li>
+<p><strong>config.getYearRange()</strong>, the range of valid years</p>
+</li>
+<li>
+<p><strong>config.getReprPattern()</strong>, the pattern for the date representation</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><em>Repository <a href="https://github.com/giannisclipper/date">here</a></em></p>
+<p><em>Documentation <a href="https://giannisclipper.github.io/date/">here</a></em></p></article>
+    </section>
+
 
 
 
@@ -50,13 +200,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="config.html">config</a></li></ul><h3>Global</h3><ul><li><a href="global.html#calcDateByDayOfYear">calcDateByDayOfYear</a></li><li><a href="global.html#calcDateByDaysAddition">calcDateByDaysAddition</a></li><li><a href="global.html#calcDayOfWeek">calcDayOfWeek</a></li><li><a href="global.html#calcDayOfYear">calcDayOfYear</a></li><li><a href="global.html#calcWeeksOfRange">calcWeeksOfRange</a></li><li><a href="global.html#countDaysOfMonth">countDaysOfMonth</a></li><li><a href="global.html#countDaysOfRange">countDaysOfRange</a></li><li><a href="global.html#countDaysOfYear">countDaysOfYear</a></li><li><a href="global.html#getDateArr">getDateArr</a></li><li><a href="global.html#getDateDate">getDateDate</a></li><li><a href="global.html#getDateObj">getDateObj</a></li><li><a href="global.html#getDateRepr">getDateRepr</a></li><li><a href="global.html#getDateStr">getDateStr</a></li><li><a href="global.html#isDate">isDate</a></li><li><a href="global.html#isInteger">isInteger</a></li><li><a href="global.html#isLeapYear">isLeapYear</a></li><li><a href="global.html#isMonth">isMonth</a></li><li><a href="global.html#isString">isString</a></li><li><a href="global.html#isYear">isYear</a></li><li><a href="global.html#opEqualTo">opEqualTo</a></li><li><a href="global.html#opGreaterThan">opGreaterThan</a></li><li><a href="global.html#opGreaterThanEqualTo">opGreaterThanEqualTo</a></li><li><a href="global.html#opLessThan">opLessThan</a></li><li><a href="global.html#opLessThanEqualTo">opLessThanEqualTo</a></li><li><a href="global.html#opNotEqualTo">opNotEqualTo</a></li><li><a href="global.html#setDateArr">setDateArr</a></li><li><a href="global.html#setDateDate">setDateDate</a></li><li><a href="global.html#setDateObj">setDateObj</a></li><li><a href="global.html#setDateRepr">setDateRepr</a></li><li><a href="global.html#setDateStr">setDateStr</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="A.set.html">set</a></li><li><a href="B.get.html">get</a></li><li><a href="C.op.html">op</a></li><li><a href="D.calc.html">calc</a></li><li><a href="E.count.html">count</a></li><li><a href="F.is.html">is</a></li><li><a href="G.config.html">config</a></li></ul><h3>Global</h3><ul><li><a href="global.html#isInteger">isInteger</a></li><li><a href="global.html#isString">isString</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Thu May 13 2021 00:34:40 GMT+0300 (Θερινή ώρα Ανατολικής Ευρώπης)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Thu May 13 2021 18:17:53 GMT+0300 (Θερινή ώρα Ανατολικής Ευρώπης)
 </footer>
 
 <script> prettyPrint(); </script>

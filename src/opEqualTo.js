@@ -13,6 +13,9 @@ import setDateStr from './setDateStr.js';
 * opEqualTo( '02/01/2021', '02/01/2021' ); // returns true
 * opEqualTo( '03/01/2021', '02/01/2021' ); // returns false
 * opEqualTo(); // returns null
+* 
+* - - -
+* @memberof C.op
 */
 
 const opEqualTo = ( date1, date2 ) => {
