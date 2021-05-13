@@ -2,7 +2,7 @@ import { isString } from './isString.js';
 import { isDate } from './isDate.js';
 
 /**
- * Retrieves date values from a string (in YYYYMMDD format)
+ * Retrieves date values from a string (in YYYYMMDD format).
  * 
  * @param { string } value - A string expressing a date
  * 

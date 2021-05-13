@@ -3,7 +3,8 @@ import { isYear } from './isYear.js';
 import { isLeapYear } from './isLeapYear.js';
 
 /**
- * Gets the number of days of a month
+ * Gets the number of days of a month.
+ * 
  * 
  * @param { number } month - A month (from 1 to 12)
  * @param { number } year - A year (to consider 29 days for february on leap years)

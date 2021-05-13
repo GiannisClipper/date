@@ -3,7 +3,7 @@ import { config } from './config.js';
 import { isDate } from './isDate.js';
 
 /**
- * Retrieves date values from a string (in representation format)
+ * Retrieves date values from a string (in representation format).
  * 
  * @param { string } value - A string expressing a date
  * @param { string } [ pattern ] - A representation pattern

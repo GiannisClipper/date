@@ -2,7 +2,7 @@ import { setDateObj } from './setDateObj.js';
 import { countDaysOfMonth } from './countDaysOfMonth.js';
 
 /**
- * Calculates the position of a date in the days sequence of the year (from 1 to 365/366)
+ * Calculates the position of a date in the days sequence of the year (from 1 to 365/366).
  * 
  * @param { ( Object | Object[] | string | Date ) } date - A date value
  * 

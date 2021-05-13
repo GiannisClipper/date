@@ -4,7 +4,7 @@ import { opLessThan } from './opLessThan.js';
 import { calcDateByDaysAddition } from './calcDateByDaysAddition.js';
 
 /**
- * Calculates the weeks according to a range of days that are placed within
+ * Calculates the weeks according to a range of days that are placed within.
  * 
  * @param { ( Object | Object[] | string | Date ) } from - A starting date of a range
  * @param { ( Object | Object[] | string | Date ) } till - An ending date of a range

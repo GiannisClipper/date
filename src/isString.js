@@ -1,5 +1,5 @@
 /**
- * Validates if a value is a string
+ * Validates if a value is a string.
  * 
  * @function
  * @package

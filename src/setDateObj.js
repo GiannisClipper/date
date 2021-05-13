@@ -5,7 +5,7 @@ import { getDateRepr } from './getDateRepr.js';
 import { getDateDate } from './getDateDate.js';
 
 /**
- * Creates an object expressing a date ({ year:, month:, day: })
+ * Creates an object expressing a date ({ year:, month:, day: }).
  * 
  * @param { ( Object | Object[] | string | Date ) } value - A date value
  * 

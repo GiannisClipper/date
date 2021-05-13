@@ -35,37 +35,37 @@ import calcDateByDaysAddition from './calcDateByDaysAddition.js';
 import calcWeeksOfRange from './calcWeeksOfRange.js';
 
 /**
- * Functions to create various value shapes expressing a date
+ * Functions to create various value shapes expressing a date.
  * @namespace A.set
  */
 
 /**
- * Functions to evaluate and retrieve the date values from various shapes
+ * Functions to evaluate and retrieve the date values from various shapes.
  * @namespace B.get
  */
 
 /**
- * Functions to compare two date values
+ * Functions to compare two date values.
  * @namespace C.op
  */
 
 /**
- * Functions to calculate new date or related values
+ * Functions to calculate new date or related values.
  * @namespace D.calc
  */
 
 /**
- * Functions to count date related values
+ * Functions to count date related values.
  * @namespace E.count
  */
 
 /**
- * Functions to validate date related values
+ * Functions to validate date related values.
  * @namespace F.is
  */
 
 /**
- * Methods to customize or retrieve general parameters
+ * Methods to customize or retrieve general parameters.
  * @namespace G.config
  */
 

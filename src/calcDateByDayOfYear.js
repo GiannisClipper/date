@@ -4,7 +4,7 @@ import { countDaysOfYear } from './countDaysOfYear.js';
 import { countDaysOfMonth } from './countDaysOfMonth.js';
 
 /**
- * Calculates the date according to a day in the sequence of a year (from 1 to 365/366)
+ * Calculates the date according to a day in the sequence of a year (from 1 to 365/366).
  * 
  * @param { number } day - A day
  * @param { number } year - A year

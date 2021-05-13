@@ -1,7 +1,7 @@
 import { setDateObj } from './setDateObj.js';
 
 /**
- * Creates a string expressing a date (in YYYYMMDD format)
+ * Creates a string expressing a date (in YYYYMMDD format).
  * 
  * @param { ( Object | Object[] | string | Date ) } value - A date value
  * 

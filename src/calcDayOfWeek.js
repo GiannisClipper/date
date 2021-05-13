@@ -2,7 +2,7 @@ import { setDateObj } from './setDateObj.js';
 import { countDaysOfRange } from './countDaysOfRange.js';
 
 /**
- * Calculates the position of a date in the days sequence of the week (from 1 to 7, monday to sunday)
+ * Calculates the position of a date in the days sequence of the week (from 1 to 7, monday to sunday).
  * 
  * @param { ( Object | Object[] | string | Date ) } date - A date value
  * 

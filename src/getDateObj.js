@@ -1,7 +1,7 @@
 import { isDate } from './isDate.js';
 
 /**
- * Retrieves date values from an object ({ year:, month:, day: })
+ * Retrieves date values from an object ({ year:, month:, day: }).
  * 
  * @param { Object } value - An object expressing a date
  * 

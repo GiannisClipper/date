@@ -3,7 +3,7 @@ import { config } from './config.js';
 import { setDateObj } from './setDateObj.js';
 
 /**
- * Creates a string expressing a date (in representation format)
+ * Creates a string expressing a date (in representation format).
  * 
  * @param { ( Object | Object[] | string | Date ) } value - A date value
  * @param { string } [ pattern ] - A representation pattern

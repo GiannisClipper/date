@@ -2,7 +2,7 @@ import { isYear } from './isYear.js';
 import { isLeapYear } from './isLeapYear.js';
 
 /**
- * Gets the number of days of a year
+ * Gets the number of days of a year.
  * 
  * @param { number } year - A year
  * 

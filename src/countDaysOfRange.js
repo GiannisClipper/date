@@ -4,7 +4,7 @@ import { countDaysOfYear } from './countDaysOfYear.js';
 import { calcDayOfYear } from './calcDayOfYear.js';
 
 /**
- * Gets the number of days of a date range including the starting and ending limits
+ * Gets the number of days of a date range including the starting and ending limits.
  * 
  * @param { ( Object | Object[] | string | Date ) } from - A starting date of a range
  * @param { ( Object | Object[] | string | Date ) } till - A ending date of a range

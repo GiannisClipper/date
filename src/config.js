@@ -4,7 +4,7 @@ import { isString } from './isString.js';
 const config = {
 
     /**
-    * Sets the range of valid years (by default from 1900 to 2099)
+    * Sets the range of valid years (by default from 1900 to 2099).
     * 
     * @param { number } from - The starting year
     * @param { number } till - The ending year
@@ -39,7 +39,7 @@ const config = {
     },
 
     /**
-    * Gets the range of valid years
+    * Gets the range of valid years.
     * 
     * @returns { Object[] } - An array with starting and ending dates
     * 
@@ -60,9 +60,9 @@ const config = {
     },
 
     /**
-    * Sets the pattern for the date representation (by default DD/MM/YYYY). A pattern is consisted of separators and series of letters 'D', 'M', 'Y' (or 'd', 'm', 'y') expressing day, month, year. Using capitals the width of the date remains fixed (ex. 01/01/2021) but using small letters becomes flexible (ex. 1/1/2021).
+    * Sets the pattern for the date representation (by default DD/MM/YYYY).
     * 
-    * @param { string } pattern - A pattern
+    * @param { string } pattern - A pattern consisted of separators and series of letters 'D', 'M', 'Y' (or 'd', 'm', 'y') expressing day, month, year. Using capitals the width of the date remains fixed (ex. 01/01/2021) but using small letters becomes flexible (ex. 1/1/2021).
     * 
     * @returns { boolean } - True on success or false on invalid param
     * 
@@ -92,7 +92,7 @@ const config = {
     },
 
     /**
-    * Gets the pattern for the date representation
+    * Gets the pattern for the date representation.
     * 
     * @returns { string } - A pattern
     * 
